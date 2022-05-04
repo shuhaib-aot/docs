@@ -1,109 +1,687 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Forms flow ai documentation">
-    <meta name="author" content="formsflow.ai">    
-    <link rel="shortcut icon" href="favicon.ico"> 
-    <title>Welcome to formsflow.ai</title>
-   
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome JS-->
-    <script defer src="assets/fontawesome/js/all.min.js"></script>
-    
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
 
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
-    <link id="theme-style" rel="stylesheet" href="assets/css/atom-one-dark.min.css">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Forms flow ai documentation">
+	<meta name="author" content="formsflow.ai">
+	<link rel="shortcut icon" href="favicon.ico">
+	<title>Welcome to formsflow.ai</title>
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+
+	<!-- FontAwesome JS-->
+	<script defer src="assets/fontawesome/js/all.min.js"></script>
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+
+	<!-- Theme CSS -->
+	<link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+	<link id="theme-style" rel="stylesheet" href="assets/css/atom-one-dark.min.css">
 </head>
+
 <body>
 
-    <header class="header fixed-top">	    
-        <div class="branding docs-branding">
-            <div class="container-fluid position-relative py-2">
-                <div class="docs-logo-wrapper">
-					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
-	                    <span></span>
-	                    <span></span>
-	                    <span></span>
-	                </button>
-	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2" src="assets/images/formsflow.ai-logo.svg" alt="logo"><span class="logo-text">formsflow.ai</span></a></div>    
-                </div><!--//docs-logo-wrapper-->
-	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
-	                <div class="top-search-box d-none d-lg-flex">
-		                <form class="search-form">
-				            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
-				            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
-				        </form>
-	                </div>
-	
+	<header class="header fixed-top">
+		<div class="branding docs-branding">
+			<div class="container-fluid position-relative py-2">
+				<div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
+						type="button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2"
+								src="assets/images/formsflow.ai-logo.svg" alt="logo"><span
+								class="logo-text">formsflow.ai</span></a></div>
+				</div>
+				<!--//docs-logo-wrapper-->
+				<div class="docs-top-utilities d-flex justify-content-end align-items-center">
+					<div class="top-search-box d-none d-lg-flex">
+						<form class="search-form">
+							<input type="text" placeholder="Search the docs..." name="search"
+								class="form-control search-input">
+							<button type="submit" class="btn search-btn" value="Search"><i
+									class="fas fa-search"></i></button>
+						</form>
+					</div>
+
 					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
-						<li class="list-inline-item"><a href="https://github.com/AOT-Technologies/forms-flow-ai"><i class="fab fa-github fa-fw"></i></a></li>
-		            </ul><!--//social-list-->
-		            <a href="https://github.com/AOT-Technologies/forms-flow-ai" class="btn btn-primary d-none d-lg-flex">Download</a>
-	            </div><!--//docs-top-utilities-->
-            </div><!--//container-->
-        </div><!--//branding-->
-    </header><!--//header-->
+						<li class="list-inline-item"><a href="https://github.com/AOT-Technologies/forms-flow-ai"><i
+									class="fab fa-github fa-fw"></i></a></li>
+					</ul>
+					<!--//social-list-->
+					<a href="https://github.com/AOT-Technologies/forms-flow-ai"
+						class="btn btn-primary d-none d-lg-flex">Download</a>
+				</div>
+				<!--//docs-top-utilities-->
+			</div>
+			<!--//container-->
+		</div>
+		<!--//branding-->
+	</header>
+	<!--//header-->
 
-    <div class="docs-wrapper">
-	    <div id="docs-sidebar" class="docs-sidebar">
-		    <div class="top-search-box d-lg-none p-3">
-                <form class="search-form">
-		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
-		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
-		        </form>
-            </div>
-		    <nav id="docs-nav" class="docs-nav navbar">
-			    <ul class="section-items list-unstyled nav flex-column pb-3">
-                    <!-- main heading -->
-				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Getting started</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Introduction</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Download</a></li> 
-                    <!-- main heading -->
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Installation</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#installation-1">Quick Installation</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#installation-2">Section Item 2.2</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#installation-3">Section Item 2.3</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#installation-4">Defulat credentials</a></li>
-                    <!-- main heading -->
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-1">Section Item 9.1</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-2">Section Item 9.2</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-3">Section Item 9.3</a></li>
-			    </ul>
+	<div class="docs-wrapper">
+		<div id="docs-sidebar" class="docs-sidebar">
+			<div class="top-search-box d-lg-none p-3">
+				<form class="search-form">
+					<input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+					<button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+				</form>
+			</div>
+			<nav id="docs-nav" class="docs-nav navbar">
+				<ul class="section-items list-unstyled nav flex-column pb-3">
+					<!-- main heading -->
+					<li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span
+								class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Getting
+							started</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Introduction</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Download</a></li>
+					<!-- main heading -->
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span
+								class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Installation</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#installation-1">Quick Installation</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#installation-2">Download and
+							Installation</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#installation-3">Anonymous</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#installation-4">Defulat credentials</a>
+					</li>
+					<!-- main heading -->
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span
+								class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-9-1">Section Item 9.1</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-9-2">Section Item 9.2</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-9-3">Section Item 9.3</a></li>
+				</ul>
 
-		    </nav><!--//docs-nav-->
-	    </div><!--//docs-sidebar-->
-	    <div class="docs-content">
-		    <div class="container">
-			    <article class="docs-article" id="section-1">
-                <!-- main heading content -->
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 2019-06-01</span></h1>
-					    <section class="docs-intro">
-						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
-						</section><!--//docs-intro-->
-						
-						<h5>Github Code Example:</h5>
-						<p>You can <a class="theme-link" href="https://gist.github.com/"  target="_blank">embed your code snippets using Github gists</a></p>
+			</nav>
+			<!--//docs-nav-->
+		</div>
+		<!--//docs-sidebar-->
+		<div class="docs-content">
+			<div class="container">
+				<article class="docs-article" id="section-1">
+					<!-- main heading content -->
+					<header class="docs-header">
+						<h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 2019-06-01</span>
+						</h1>
+						<section class="docs-intro">
+							<p>
+							<p>welcome to formsflow.ai</p>
+
+							<p>formsflow.ai is developed by AOT Technologies.
+
+								We are on a mission to empower our clients to serve people better.
+
+								By building intelligent systems and leveraging our expertise in integration and
+								analytics, we are able to make an impact on the world alongside our clients. Our purpose
+								is to use technology and our expertise to build systems that benefit society.
+							</p>
+							<img src="./assets/images/bnr_img2-2.png">
+							<p>
+								The project was initiated by AOT Technologies as a means of addressing the general
+								situation whereby end-users fill in a form, the form is processed and there may be a
+								requirement to report on the form metrics or data.
+							</p>
+							<p>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/Gq24xjzP5l8"
+									title="YouTube video player" frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen></iframe>
+							</p>
+							<a href="https://www.aot-technologies.com">For more informations visit</a>
+							<br><br>
+							<h2 id="how-it-works">How it Works</h2>
+							<p>It starts with an open source dynamic form builder, a drag-and-drop user interface tool
+								that allows you to create functional front-end web forms. You can easily configure the
+								rules and business processes that should be triggered when the form is by the user.
+								Then, you&#39;ll set up the back-end, using formsflow.
+								<br>
+								<br>
+								<img src="./assets/images/How It works.jpg" alt="Creating new form">
+							</p>
+							<br>
+							<div>
+								<h1 id="usage-instructions">Usage Instructions</h1>
+								<p>In the following document, we’ll describe the step by step instructions to set up a
+									working sample in the formsflow.ai solution.</p>
+								<h3 id="table-of-contents">Table of Contents</h3>
+								<ol>
+									<li><a href="#usage-instructions">Usage Instructions</a>
+										<ul>
+											<li><a href="#designer-steps">STEP 1 : Designer Steps</a></li>
+											<li><a href="#client-steps">STEP 2 : Client Steps</a></li>
+											<li><a href="#reviewer-steps">STEP 3 : Reviewer Steps</a></li>
+										</ul>
+									</li>
+									<li><a href="#usage-instructions-with-example">Usage Instructions with examples</a>
+										<ul>
+											<li><a href="#freedom-of-information-and-protection-of-privacy">Freedom of
+													Information and Protection of Privacy</a>
+												<ul>
+													<li><a href="#designer--steps">STEP 1 : Designer Steps</a></li>
+													<li><a href="#client--steps">STEP 2 : Client Steps</a></li>
+													<li><a href="#reviewer--steps">STEP 3 : Reviewer Steps</a></li>
+												</ul>
+											</li>
+											<li><a href="#create-new-business-license-application">Create New Business
+													License Application</a>
+												<ul>
+													<li><a href="#designer---steps">STEP 1 : Designer Steps</a></li>
+													<li><a href="#client---steps">STEP 2 : Client Steps</a></li>
+													<li><a href="#clerk-steps">STEP 3 : Clerk Steps</a></li>
+													<li><a href="#approver-steps">STEP 4 : Approver Steps</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li><a href="#links">Links</a></li>
+								</ol>
+								<h3 id="usage-instructions">Usage Instructions</h3>
+								<blockquote>
+									<p>The following instructions can be followed to use formsflow.ai solution after the
+										successful healthcheck of all formsflow.ai services.</p>
+								</blockquote>
+								<h3 id="designer-steps">Designer Steps</h3>
+								<ul>
+									<li>Log in to <a href="http://localhost:3000">http://localhost:3000</a>
+										(forms-flow-web) with valid <a
+											href="./forms-flow-idm/keycloak/README.md#formsflow-ai-user-credentials">user
+											credentials for the designer</a>.</li>
+									<li>After the log in is successful, you will be redirected to <a
+											href="http://localhost:3000/form">http://localhost:3000/form</a> where you
+										can <code>Create/View/Edit/Delete a form</code>.</li>
+									<li>To create a form click on <strong>Create Form Button</strong>, you can use the
+										Drag-and-drop forms-builder to create a new form.</li>
+									<li>Once the form creation is completed click on <strong>Save &amp; Preview
+											Button</strong>, you can also modify the form by clicking on <strong>Edit
+											Button</strong> else click on the <strong>Next Button</strong> to proceed
+										further at this point.</li>
+									<li>At this stage form designing is completed, you can click on the <strong>EDIT
+											Button</strong> and associate a suitable workflow as per the business
+										requirement.<blockquote>
+											<p>Workflows that are marked as [Internal] should not be associated with a
+												form.</p>
+										</blockquote>
+									</li>
+									<li>After the workflow association is completed click on the <strong>Next
+											Button</strong> to preview and confirm.</li>
+									<li>You can click on the <strong>EDIT Button</strong> and select
+										<code>publish the form for clients</code> to send it for client usage.
+									</li>
+									<li>Click on <strong>SAVE Button</strong> to complete the design part.</li>
+									<li>Form designing is successfully completed, you can now <strong>Log out</strong>
+										and go to <a href="#client-steps">Client Steps</a> </li>
+								</ul>
+								<h3 id="client-steps">Client Steps</h3>
+								<ul>
+									<li>Log in to <a href="http://localhost:3000">http://localhost:3000</a>
+										(forms-flow-web) with valid <a
+											href="./forms-flow-idm/keycloak/README.md#formsflow-ai-user-credentials">user
+											credentials for the client</a>.</li>
+									<li>After the Log in is successful you will be redirected to <a
+											href="http://localhost:3000/form">http://localhost:3000/form</a> where you
+										can <code>View and Submit a form</code>.</li>
+									<li>Click on <strong>Submit New Button</strong> to fill a form and submit it.</li>
+									<li>Fill in the details and submit the form, You can repeat this action as per your
+										requirement.</li>
+									<li>If you had associated a workflow with the form then the workflow will be
+										started.</li>
+									<li>This action is completed, you can now Log out and go to <a
+											href="#reviewer-steps">Reviewer Steps</a> if you have a user review
+										mentioned in your workflow.</li>
+								</ul>
+								<h3 id="reviewer-steps">Reviewer Steps</h3>
+								<ul>
+									<li>Log in to <a href="http://localhost:3000">http://localhost:3000</a>
+										(forms-flow-web) with valid <a
+											href="./forms-flow-idm/keycloak/README.md#formsflow-ai-user-credentials">user
+											credentials for the reviewer</a>.</li>
+									<li>After successful Log in, you will be redirected to <a
+											href="http://localhost:3000/task">http://localhost:3000/task</a> where you
+										can navigate to the <code>Tasks tab</code> to see the tasks pending to be
+										reviewed.</li>
+									<li>You can click on a task item to review the task and take an action. There are
+										options to <strong>Filter Tasks</strong> and <strong>sort by Created
+											Date</strong> to easily search for the task you want.</li>
+									<li>On selecting a task item there are options to modify the <strong>Assignee/
+											Groups / Due Date / FollowUp Date</strong>.</li>
+									<li>Also, you can view the <strong>Form/ History / Diagram</strong></li>
+									<li>You can navigate to the <strong>Applications tab</strong> to view form
+										submissions.</li>
+									<li>You can view the submissions against a form by clicking on <strong>View
+											Submissions Button</strong></li>
+									<li>You can also submit a new form using <a href="#client-steps">STEP 2</a> from the
+										Forms Tab.</li>
+									<li>You can navigate to the <strong>Dashboards</strong> tab to see the analytics of
+										our solution<ul>
+											<li>You can navigate to the <strong>Metrics</strong> tab to see an overview
+												of the total form submissions and associated application status to
+												indicate which stage of workflow it is now.</li>
+											<li>You can navigate to the <strong>Insights</strong> tab to see a wonderful
+												dashboard created in the formsflow.ai analytics server.</li>
+										</ul>
+									</li>
+									<li>Reviewer action is completed.<blockquote>
+											<p>Clerk &amp; Approver are part of the main group Reviewer, so the steps
+												are similar to Reviewer Steps.</p>
+											<h2 id="usage-instructions-with-examples">Usage Instructions with examples
+											</h2>
+										</blockquote>
+									</li>
+								</ul>
+								<h2 id="freedom-of-information-and-protection-of-privacy">Freedom of Information and
+									Protection of Privacy</h2>
+								<blockquote>
+									<p>The following instructions are using an example from the form.io -
+										<code>Freedom of Information and Protection of Privacy</code>.
+									</p>
+								</blockquote>
+								<h3 id="designer-steps">Designer Steps</h3>
+								<ul>
+									<li>Log in to <a href="http://localhost:3000">http://localhost:3000</a>
+										(forms-flow-web) with valid <a
+											href="./forms-flow-idm/keycloak/README.md#formsflow-ai-user-credentials">user
+											credentials for the designer</a>.</li>
+									<li>After the log in is successful you will be redirected to <a
+											href="http://localhost:3000/form">http://localhost:3000/form</a> where you
+										can <code>Create / View / Edit / Delete</code> a form.</li>
+								</ul>
+								<p><img src="https://user-images.githubusercontent.com/83489861/124453516-1107d380-dda5-11eb-9dba-2742cabc8582.png"
+										alt="image"></p>
+								<ul>
+									<li>Select the <code>Freedom of Information and Protection of Privacy</code> form by
+										clicking on it.</li>
+									<li>You can modify the form by clicking on the <strong>View/Edit Form</strong>
+										button or continue by clicking the <strong>Next</strong> button.</li>
+								</ul>
+								<p><img src="https://user-images.githubusercontent.com/83489861/124475627-8d0f1500-ddbf-11eb-8ca1-5898bcc7d499.png"
+										alt="image"></p>
+								<ul>
+									<li>At this stage form designing is completed, you can click on the <strong>EDIT
+											Button</strong> and associate a workflow - One Step Approval. </li>
+								</ul>
+								<p><img src="https://user-images.githubusercontent.com/83489861/124475762-b6c83c00-ddbf-11eb-9911-41e55e2a9b9d.png"
+										alt="image"></p>
+								<ul>
+									<li>After the associate workflow is completed click on the <strong>Next
+											Button</strong> to Preview and Confirm.</li>
+									<li>You can click on the <strong>EDIT Button</strong> and publish the form for
+										clients.</li>
+								</ul>
+								<p><img src="https://user-images.githubusercontent.com/83489861/124475827-cba4cf80-ddbf-11eb-8b07-f8c2b23c25eb.png"
+										alt="image"></p>
+								<ul>
+									<li>
+										<p>Click on <strong>SAVE Button</strong> to completed designing a form.</p>
+									</li>
+									<li>
+										<p>Form designing is successfully completed, you can now Log out and go to <a
+												href="#client--steps">Client Steps</a></p>
+									</li>
+								</ul>
+								<h3 id="client-steps">Client Steps</h3>
+								<ul>
+									<li>Log in to <a href="http://localhost:3000">http://localhost:3000</a>
+										(forms-flow-web) with valid <a
+											href="./forms-flow-idm/keycloak/README.md#formsflow-ai-user-credentials">default
+											user credentials for the client</a>.</li>
+									<li>After the Log in is successful you will be redirected to <a
+											href="http://localhost:3000/form">http://localhost:3000/form</a> where you
+										can View and Submit a form.</li>
+								</ul>
+								<p><img src="https://user-images.githubusercontent.com/83489861/124476700-c72ce680-ddc0-11eb-9dba-31adf9d63a5e.png"
+										alt="image"></p>
+								<ul>
+									<li>Click <strong>Submit New Button</strong> on the form to fill and submit it.</li>
+								</ul>
+								<p><img src="https://user-images.githubusercontent.com/83584866/124597717-6d402580-de81-11eb-9b15-6e84bec7a8b3.PNG"
+										alt="Image 1"></p>
+								<ul>
+									<li>If you had associated a workflow with the form, the form will start the
+										workflow.</li>
+									<li>This action is completed, you can now Log out and go to <a
+											href="#reviewer--steps">Reviewer Steps</a> if you have a user review
+										mentioned in your workflow.</li>
+								</ul>
+								<h3 id="reviewer-steps">Reviewer Steps</h3>
+								<ul>
+									<li>Log in to <a href="http://localhost:3000">http://localhost:3000</a>
+										(forms-flow-web) with valid <a
+											href="./forms-flow-idm/keycloak/README.md#formsflow-ai-user-credentials">default
+											user credentials for the reviewer</a>.</li>
+									<li>After the Log in is successful you will be redirected to <a
+											href="http://localhost:3000/task">http://localhost:3000/task</a>.</li>
+								</ul>
+								<p><img src="https://user-images.githubusercontent.com/83584866/124597833-92349880-de81-11eb-8d47-6f724627a651.PNG"
+										alt="Image 9"></p>
+								<ul>
+									<li>You can navigate to the Applications tab to <strong>View the Form</strong>
+										submissions.</li>
+								</ul>
+								<p><img src="https://user-images.githubusercontent.com/83584866/124597926-b001fd80-de81-11eb-91ae-08002d5202cb.PNG"
+										alt="Image 10"></p>
+								<ul>
+									<li>You can View the submissions against a form by clicking on the
+										<strong>View</strong> button.
+									</li>
+								</ul>
+								<p><img src="https://user-images.githubusercontent.com/83584866/124598386-2acb1880-de82-11eb-8cb4-fe3249d3de93.PNG"
+										alt="Image 26"></p>
+								<ul>
+									<li>You can print the Form as a PDF.</li>
+								</ul>
+								<p><img src="https://user-images.githubusercontent.com/83584866/124598443-3cacbb80-de82-11eb-8a19-bfe379978864.PNG"
+										alt="Image 6"></p>
+								<ul>
+									<li>On clicking the associated task which was recently created ie. <em>Freedom of
+											Information and Protection of Privacy</em>, the task detailed menu usually
+										has three sections - <strong>Form</strong>, <strong>History</strong>,
+										<strong>Diagram</strong>
+									</li>
+								</ul>
+								<p><img src="https://user-images.githubusercontent.com/83584866/124598608-6f56b400-de82-11eb-9409-dcba892441c8.PNG"
+										alt="Image 15">
+									<img src="https://user-images.githubusercontent.com/83584866/124598662-7a114900-de82-11eb-8653-d370bc3aa7c9.PNG"
+										alt="Image 16">
+									<img src="https://user-images.githubusercontent.com/83584866/124598701-84cbde00-de82-11eb-9773-c84afbbd812c.PNG"
+										alt="Image 17">
+								</p>
+								<ul>
+									<li>On claiming the task, the Reviewer can fill the form and submit his/her review.
+									</li>
+								</ul>
+								<p><img src="https://user-images.githubusercontent.com/83584866/124598773-9b723500-de82-11eb-8070-5551ae2f1398.PNG"
+										alt="Image 18">
+									<img src="https://user-images.githubusercontent.com/83584866/124598911-c3619880-de82-11eb-85a2-f3f5f065ba9c.PNG"
+										alt="Image 19">
+									<img src="https://user-images.githubusercontent.com/83584866/124598962-cfe5f100-de82-11eb-8938-4309efd872fb.PNG"
+										alt="Image 20">
+								</p>
+								<ul>
+									<li>On the <strong>Application</strong> section, the form submission history can be
+										found and the form can be viewed.</li>
+								</ul>
+								<p><img src="https://user-images.githubusercontent.com/83584866/124599112-f015b000-de82-11eb-87ff-89ac9fb95d24.PNG"
+										alt="Image 21">
+									<img src="https://user-images.githubusercontent.com/83584866/124599317-2a7f4d00-de83-11eb-8bc1-5215bb9add03.PNG"
+										alt="Image 24">
+									<img src="https://user-images.githubusercontent.com/83584866/125240030-2a5dd200-e307-11eb-8ed4-ab46fe647534.PNG"
+										alt="Image 68">
+									<img src="https://user-images.githubusercontent.com/83584866/124599471-54387400-de83-11eb-8e53-ba9319748d2f.PNG"
+										alt="Image 26">
+								</p>
+								<ul>
+									<li>Reviewer action is completed.</li>
+								</ul>
+								<h2 id="create-new-business-license-application">Create New Business License Application
+								</h2>
+								<blockquote>
+									<p>The following instructions are using an example form from the form.io -
+										<code>Create New Business License Application</code>.
+									</p>
+								</blockquote>
+								<h3 id="designer-steps">Designer Steps</h3>
+								<ul>
+									<li>Log in to <a href="http://localhost:3000">http://localhost:3000</a>
+										(forms-flow-web) with valid <a
+											href="./forms-flow-idm/keycloak/README.md#formsflow-ai-user-credentials">user
+											credentials for the designer</a>.</li>
+									<li>After the Log in is successful you will be redirected to <a
+											href="http://localhost:3000/form">http://localhost:3000/form</a> where you
+										can <code>Create / View / Edit / Delete</code> a form.</li>
+								</ul>
+								<p><img src="https://user-images.githubusercontent.com/83489861/124479964-69020280-ddc4-11eb-9739-18c44a770f76.png"
+										alt="image"></p>
+								<ul>
+									<li>Select the <code>New Business License Application</code> form by clicking on it.
+									</li>
+									<li>You can modify the form by clicking on the <strong>View/Edit Form</strong>
+										button or continue by clicking the <strong>Next</strong> button.</li>
+								</ul>
+								<p><img src="https://user-images.githubusercontent.com/83489861/124480017-76b78800-ddc4-11eb-9b31-e0b2df759656.png"
+										alt="image"></p>
+								<ul>
+									<li>At this stage form designing is completed, you can click on the <strong>EDIT
+											Button</strong> and associate a workflow - Two-Step Approval. </li>
+								</ul>
+								<p><img src="https://user-images.githubusercontent.com/83489861/124480123-9058cf80-ddc4-11eb-802c-b69bfc796685.png"
+										alt="image"></p>
+								<ul>
+									<li>After the associate workflow is completed click on the <strong>Next
+											Button</strong> to Preview and Confirm.</li>
+									<li>You can click on the <strong>EDIT Button</strong> and publish the form for
+										clients.</li>
+								</ul>
+								<p><img src="https://user-images.githubusercontent.com/83489861/124480173-9ea6eb80-ddc4-11eb-9b51-cf7c1ebbdb90.png"
+										alt="image"></p>
+								<ul>
+									<li>Click on <strong>SAVE Button</strong> to completed designing a form.</li>
+									<li>Form designing is successfully completed, you can now Log out and go to <a
+											href="#client---steps">Client Steps</a></li>
+								</ul>
+								<h3 id="client-steps">Client Steps</h3>
+								<ul>
+									<li>Log in to <a href="http://localhost:3000">http://localhost:3000</a>
+										(forms-flow-web) with valid <a
+											href="./forms-flow-idm/keycloak/README.md#formsflow-ai-user-credentials">default
+											user credentials for the client</a>.</li>
+									<li>After the Log in is successful you will be redirected to <a
+											href="http://localhost:3000/form">http://localhost:3000/form</a> where you
+										can View and Submit a form.</li>
+								</ul>
+								<p><img src="https://user-images.githubusercontent.com/83489861/124480279-b9796000-ddc4-11eb-83c5-894f8b5ea223.png"
+										alt="image"></p>
+								<ul>
+									<li>Click <strong>Submit New Button</strong> on the form which you wanted to submit.
+									</li>
+									<li>The previous action will redirect you to the form, where you can fill in the
+										details and Submit them.</li>
+								</ul>
+								<p><img src="https://user-images.githubusercontent.com/83584866/124552424-276b6900-de51-11eb-8e15-db699c944040.PNG"
+										alt="Image 2"></p>
+								<ul>
+									<li>
+										<p>Fill in the details and Submit the form, You can repeat this action as per
+											your requirement.</p>
+										<p><img src="https://user-images.githubusercontent.com/83584866/124552756-9052e100-de51-11eb-9c92-64f61ee1fa3a.png"
+												alt="Image 3"></p>
+									</li>
+									<li>If you had associated a workflow with the form, the form will start the
+										workflow.</li>
+									<li>This action is completed, you can now Log out and go to <a
+											href="#clerk-steps">Clerk Steps</a>.</li>
+								</ul>
+								<h3 id="clerk-steps">Clerk Steps</h3>
+								<ul>
+									<li>Log in to <a href="http://localhost:3000">http://localhost:3000</a>
+										(forms-flow-web) with valid <a
+											href="./forms-flow-idm/keycloak/README.md#formsflow-ai-user-credentials">default
+											user credentials for Clerk</a>.</li>
+									<li>After the Log in is successful you will be redirected to <a
+											href="http://localhost:3000/task">http://localhost:3000/task</a>.</li>
+								</ul>
+								<p><img src="https://user-images.githubusercontent.com/83584866/124553139-ffc8d080-de51-11eb-9476-46b925821b12.PNG"
+										alt="Image 10"></p>
+								<ul>
+									<li>You can navigate to the Applications tab to <strong>View the Form</strong>
+										submissions.</li>
+								</ul>
+								<p><img src="https://user-images.githubusercontent.com/83584866/124565163-5be62180-de5f-11eb-8115-680d3e4fe8cc.PNG"
+										alt="Image 12"></p>
+								<ul>
+									<li>You can View the submissions against a form by clicking on the
+										<strong>View</strong> button.
+									</li>
+								</ul>
+								<p><img src="https://user-images.githubusercontent.com/83584866/124565303-8506b200-de5f-11eb-889b-3710d08d62fa.PNG"
+										alt="Image 17"></p>
+								<ul>
+									<li>You can print the Form submission as a PDF.</li>
+								</ul>
+								<p><img src="https://user-images.githubusercontent.com/83584866/124565427-a6679e00-de5f-11eb-9fe4-266ba57ad0c3.PNG"
+										alt="Image 7"></p>
+								<p><img src="https://user-images.githubusercontent.com/83584866/124578912-46c3bf80-de6c-11eb-9bc4-03f24150a31d.PNG"
+										alt="Image 42"></p>
+								<ul>
+									<li>The associated task can be found for the Clerk role in the <strong>Task
+											Menu</strong> section</li>
+									<li>
+										<p>On clicking the associated task which was recently created ie. <em>New
+												Business License Application with Two-Step Approval</em>, the task
+											detailed menu usually has three sections - <strong>Form</strong>,
+											<strong>History</strong>, <strong>Diagram</strong>
+											<img src="https://user-images.githubusercontent.com/83584866/124566028-4a514980-de60-11eb-9eda-890aa7bf32f5.PNG"
+												alt="Image 18">
+											<img src="https://user-images.githubusercontent.com/83584866/124566338-94d2c600-de60-11eb-8d17-552bbd2c766f.PNG"
+												alt="Image 19">
+											<img src="https://user-images.githubusercontent.com/83584866/124566434-aa47f000-de60-11eb-964d-195d06d8a9eb.PNG"
+												alt="Image 20">
+										</p>
+									</li>
+									<li>
+										<p>On claiming the task, the Clerk can fill the form and submit his/her review
+											with feedback.</p>
+									</li>
+									<li>
+										<p>Return option will send the form back to the client for edit and
+											resubmission.
+											<img src="https://user-images.githubusercontent.com/83584866/124566523-c0ee4700-de60-11eb-8d27-7b46f0a856e7.PNG"
+												alt="Image 21">
+											<img src="https://user-images.githubusercontent.com/83584866/125240658-03ec6680-e308-11eb-9655-153817406389.PNG"
+												alt="Image 22">
+										</p>
+									</li>
+									<li>
+										<p>On returning, the form application status change from New to Resubmit with an
+											edit option<br><img
+												src="https://user-images.githubusercontent.com/83584866/125245993-db1b9f80-e30e-11eb-9d98-b2ed0f868d27.PNG"
+												alt="Image 23"></p>
+									</li>
+									<li>Log in as a client and resubmit the form, then status change to resubmitted.
+										<img src="https://user-images.githubusercontent.com/83584866/125246415-61d07c80-e30f-11eb-961a-86f0bc76c81a.PNG"
+											alt="Image 36">
+									</li>
+									<li>
+										<p>Log in as a clerk and claim the task. Submit his/her review with feedback.
+											Then the status change to reviewed.
+											<img src="https://user-images.githubusercontent.com/83584866/125248187-6a29b700-e311-11eb-9d99-a9520c1f7c4b.PNG"
+												alt="Image 52">
+										</p>
+									</li>
+									<li>
+										<p>This action is completed, you can now Log out and go to <a
+												href="#approver-steps">Approver Steps</a>.</p>
+									</li>
+								</ul>
+								<h3 id="approver-steps">Approver Steps</h3>
+								<ul>
+									<li>Log in to <a href="http://localhost:3000">http://localhost:3000</a>
+										(forms-flow-web) with valid <a
+											href="./forms-flow-idm/keycloak/README.md#formsflow-ai-user-credentials">default
+											user credentials for Approver</a>.</li>
+									<li>After the Log in is successful you will be redirected to <a
+											href="http://localhost:3000/task">http://localhost:3000/task</a>.</li>
+								</ul>
+								<p><img src="https://user-images.githubusercontent.com/83584866/124575685-3a8a3300-de69-11eb-92dc-267d84c29cb0.PNG"
+										alt="Image 54"></p>
+								<ul>
+									<li>You can navigate to the Applications tab to <strong>View the Form</strong>
+										submissions.</li>
+								</ul>
+								<p><img src="https://user-images.githubusercontent.com/83584866/124575815-57266b00-de69-11eb-8c64-1d9df0e10c87.PNG"
+										alt="Image 55"></p>
+								<ul>
+									<li>You can View the submissions against a form by clicking on the
+										<strong>View</strong> button.
+									</li>
+								</ul>
+								<p><img src="https://user-images.githubusercontent.com/83584866/124575886-6ad1d180-de69-11eb-9665-b535939f5a9b.PNG"
+										alt="Image 56"></p>
+								<ul>
+									<li>You can print the Form submission as a PDF.</li>
+								</ul>
+								<p><img src="https://user-images.githubusercontent.com/83584866/124576102-9e146080-de69-11eb-9157-af43d6a2a245.PNG"
+										alt="Image 57"></p>
+								<p><img src="https://user-images.githubusercontent.com/83584866/124578694-10864000-de6c-11eb-8c90-b644511d9565.PNG"
+										alt="Image 60"></p>
+								<ul>
+									<li>The associated task can be found for the Approver role in the <strong>Task
+											Menu</strong> section</li>
+									<li>On clicking the associated task which was recently created ie. <em>New Business
+											License Application with Two-Step Approval</em>, the task detailed menu
+										usually has three sections - <strong>Forms</strong>, <strong>History</strong>,
+										<strong>Diagram</strong>
+									</li>
+								</ul>
+								<p><img src="https://user-images.githubusercontent.com/83584866/124576463-f2b7db80-de69-11eb-88ca-1927e2418409.PNG"
+										alt="Image 62">
+									<img src="https://user-images.githubusercontent.com/83584866/124576519-02cfbb00-de6a-11eb-8111-8e89236186e3.PNG"
+										alt="Image 63">
+									<img src="https://user-images.githubusercontent.com/83584866/124576585-124f0400-de6a-11eb-98dc-b46b626c2a8c.PNG"
+										alt="Image 64">
+								</p>
+								<ul>
+									<li>
+										<p>On claiming the task, the Approver can fill the form and submit his/her
+											review(approved/rejected/returned) with feedback.
+											<img src="https://user-images.githubusercontent.com/83584866/124576691-2c88e200-de6a-11eb-88ad-f73496b6e265.PNG"
+												alt="Image 65">
+											<img src="https://user-images.githubusercontent.com/83584866/124576734-3874a400-de6a-11eb-8396-13c31986b0f2.PNG"
+												alt="Image 66">
+										</p>
+									</li>
+									<li>
+										<p>This action is completed, New Business License Application is completed its
+											workflow.</p>
+									</li>
+								</ul>
+								<h2 id="links">Links</h2>
+								<ul>
+									<li><a href="https://formsflow.ai/">Web site</a></li>
+									<li><a href="https://youtu.be/_H-P3Av3gqg">Youtube Link</a></li>
+								</ul>
+
+
+
+
+							</div>
+
+
+
+
+						</section>
+						<!--//docs-intro-->
+
+						<!-- <h5>Github Code Example:</h5>
+						<p>You can <a class="theme-link" href="https://gist.github.com/" target="_blank">embed your code
+								snippets using Github gists</a></p> -->
 						<div class="docs-code-block">
 							<!-- ** Embed github code starts ** -->
-							<script src="https://github.com/AOT-Technologies/forms-flow-ai/blob/master/README.md"></script>
+							<!-- <script
+								src="https://github.com/AOT-Technologies/forms-flow-ai/blob/master/README.md"></script>
 							<!-- ** Embed github code ends ** -->
-                            <a href="CONTRIBUTING.html">clickhere</a>
-						</div><!--//docs-code-block-->
-						
-					     <h5>Highlight.js Example:</h5>
-						<p>You can <a class="theme-link" href="https://github.com/highlightjs/highlight.js" target="_blank">embed your code snippets using highlight.js</a> It supports <a class="theme-link" href="https://highlightjs.org/static/demo/" target="_blank">185 languages and 89 styles</a>.</p>
-						<p>This template uses <a class="theme-link" href="https://highlightjs.org/static/demo/" target="_blank">Atom One Dark</a> style for the code blocks: <br><code>&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css&#x22;&#x3E;</code></p>
-						<div class="docs-code-block">
+							<!-- <a href="">clickhere</a> -->
+						</div>
+						<!--//docs-code-block-->
+
+						<!-- <h5>Highlight.js Example:</h5>
+						<p>You can <a class="theme-link" href="https://github.com/highlightjs/highlight.js"
+								target="_blank">embed your code snippets using highlight.js</a> It supports <a
+								class="theme-link" href="https://highlightjs.org/static/demo/" target="_blank">185
+								languages and 89 styles</a>.</p>
+						<p>This template uses <a class="theme-link" href="https://highlightjs.org/static/demo/"
+								target="_blank">Atom One Dark</a> style for the code blocks:
+							<br><code>&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css&#x22;&#x3E;</code>
+						</p> -->
+						<!-- <div class="docs-code-block">
 							<pre class="shadow-lg rounded"><code class="json hljs">[
   {
     <span class="hljs-attr">"title"</span>: <span class="hljs-string">"apples"</span>,
@@ -119,265 +697,591 @@
 
 
 </code></pre>
-						</div><!--//docs-code-block-->
-						
-						
-				    </header>
-                 <!-- main heading content end -->
-                    <!-- sub heading content -->
-				    <section class="docs-section" id="item-1-1">
-						<h2 class="section-heading">Section Item 1.1</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. </p>
-						<p>Code Example: <code>npm install &lt;package&gt;</code></p>
-						<h5>Unordered List Examples:</h5>
+						</div> -->
+						<!--//docs-code-block-->
+
+
+					</header>
+					<!-- main heading content end -->
+					<!-- sub heading content -->
+					<section class="docs-section" id="item-1-1">
+						<h2 class="section-heading">About the Project</h2>
+						<p>Use cases of formsflow are:</p>
 						<ul>
-						    <li><strong class="me-1">HTML5:</strong> <code>&lt;div id="foo"&gt;</code></li>
-						    <li><strong class="me-1">CSS:</strong> <code>#foo { color: red }</code></li>
-						    <li><strong class="me-1">JavaScript:</strong> <code>console.log(&#x27;#foo\bar&#x27;);</code></li>
+							<li>Applications for licenses</li>
+							<li>Public submissions</li>
+							<li>FOI requests</li>
+							<li>Applications for funding</li>
+							<li>Statements of compliance</li>
+							<li>Employee onboarding</li>
+							<li>Performance Reviews</li>
+							<li>Emergency processes</li>
+							<li>Escalations</li>
+							<li>Surveys</li>
+							<li>
+								<p>Case Management</p>
+								<h3 id="features">Features</h3>
+							</li>
+							<li>
+								<p>Drag-and-drop forms-builder with rich UI components</p>
+							</li>
+							<li>Lightweight server-based workflow engine with full capabilities including human,
+								parallel, asynchronous and timed flows, decision engine, and graphical designer</li>
+							<li>Notifications engine for notifications, reminders, and alerts on tasks and even data
+								thresholds.</li>
+							<li>Metrics and data visualization dashboards for the display of key workflow and form
+								data</li>
+							<li>Multi-tenancy isolation</li>
+							<li>Containerized deployment with docker, docker-compose, and Openshift</li>
+							<li>Flexible Identity Management uses existing IDM systems for authentication and single
+								sign-on</li>
+
+							<li>Low Code Open Source Form Builder</li>
+							<li>Decision Engine</li>
+							<li>Custom Dashboards</li>
+							<li>Flexible IDM Systems</li>
+							<li>No License Fees</li>
+							<li>Rich UI Components</li>
+							<li>Notifications Engine</li>
+							<li>React Web UI</li>
+							<li>Quick Start</li>
+							<li>Lightweight Workflow Engine</li>
+							<li>Form Metrics</li>
+							<li>Task Alerts</li>
+							<li>Vue.js Web UI</li>
+							<li>Professional Support</li>
+							<li>Public or Private Cloud</li>
+							<li>Submission Insights</li>
+							<li>Fully Containerized</li>
+							<li>Secure User Roles</li>
+							<li>Regular Updates</li>
 						</ul>
-						<h5>Ordered List Examples:</h5>
-						<ol>
-							<li>Download lorem ipsum dolor sit amet.</li>
-							<li>Click ipsum faucibus venenatis.</li>
-							<li>Configure fermentum malesuada nunc.</li>
-							<li>Deploy donec non ante libero.</li>
-						</ol>
-                        <h5>Callout Examples:</h5>
-                        <div class="callout-block callout-block-info">
-                            
-                            <div class="content">
-                                <h4 class="callout-title">
-	                                <span class="callout-icon-holder me-1">
-		                                <i class="fas fa-info-circle"></i>
-		                            </span><!--//icon-holder-->
-	                                Note
-	                            </h4>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium <code>&lt;code&gt;</code> , Nemo enim ipsam voluptatem quia voluptas <a href="#">link example</a> sit aspernatur aut odit aut fugit.</p>
-                            </div><!--//content-->
-                        </div><!--//callout-block-->
-                        
-                        <div class="callout-block callout-block-warning">
-                            <div class="content">
-                                <h4 class="callout-title">
-	                                <span class="callout-icon-holder me-1">
-		                                <i class="fas fa-bullhorn"></i>
-		                            </span><!--//icon-holder-->
-	                                Warning
-	                            </h4>
-                                <p>Nunc hendrerit odio quis dignissim efficitur. Proin ut finibus libero. Morbi posuere fringilla felis eget sagittis. Fusce sem orci, cursus in tortor <a href="#">link example</a> tellus vel diam viverra elementum.</p>
-                            </div><!--//content-->
-                        </div><!--//callout-block-->
-                        
-                        <div class="callout-block callout-block-success">
-                            <div class="content">
-                                <h4 class="callout-title">
-	                                <span class="callout-icon-holder me-1">
-		                                <i class="fas fa-thumbs-up"></i>
-		                            </span><!--//icon-holder-->
-	                                Tip
-	                            </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <a href="#">Link example</a> aenean commodo ligula eget dolor.</p>
-                            </div><!--//content-->
-                        </div><!--//callout-block-->
-                        
-                        <div class="callout-block callout-block-danger me-1">
-                            <div class="content">
-                                <h4 class="callout-title">
-	                                <span class="callout-icon-holder">
-		                                <i class="fas fa-exclamation-triangle"></i>
-		                            </span><!--//icon-holder-->
-	                                Danger
-	                            </h4>
-                                <p>Morbi eget interdum sapien. Donec sed turpis sed nulla lacinia accumsan vitae ut tellus. Aenean vestibulum <a href="#">Link example</a> maximus ipsum vel dignissim. Morbi ornare elit sit amet massa feugiat, viverra dictum ipsum pellentesque. </p>
-                            </div><!--//content-->
-                        </div><!--//callout-block-->
-                        
-                        <h5 class="mt-5">Alert Examples:</h5>
-                        <div class="alert alert-primary" role="alert">
-						  This is a primary alert—check it out!
+
+						</p>
+						<h5>Callout Examples:</h5>
+						<div class="callout-block callout-block-info">
+
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<i class="fas fa-info-circle"></i>
+									</span>
+									<!--//icon-holder-->
+									Note
+								</h4>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+									<code>&lt;code&gt;</code> , Nemo enim ipsam voluptatem quia voluptas <a
+										href="#">link example</a> sit aspernatur aut odit aut fugit.
+								</p>
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
+
+						<div class="callout-block callout-block-warning">
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<i class="fas fa-bullhorn"></i>
+									</span>
+									<!--//icon-holder-->
+									Warning
+								</h4>
+								<p>Nunc hendrerit odio quis dignissim efficitur. Proin ut finibus libero. Morbi posuere
+									fringilla felis eget sagittis. Fusce sem orci, cursus in tortor <a href="#">link
+										example</a> tellus vel diam viverra elementum.</p>
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
+
+						<div class="callout-block callout-block-success">
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<i class="fas fa-thumbs-up"></i>
+									</span>
+									<!--//icon-holder-->
+									Tip
+								</h4>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <a href="#">Link
+										example</a> aenean commodo ligula eget dolor.</p>
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
+
+						<div class="callout-block callout-block-danger me-1">
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder">
+										<i class="fas fa-exclamation-triangle"></i>
+									</span>
+									<!--//icon-holder-->
+									Danger
+								</h4>
+								<p>Morbi eget interdum sapien. Donec sed turpis sed nulla lacinia accumsan vitae ut
+									tellus. Aenean vestibulum <a href="#">Link example</a> maximus ipsum vel dignissim.
+									Morbi ornare elit sit amet massa feugiat, viverra dictum ipsum pellentesque. </p>
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
+
+						<h5 class="mt-5">Alert Examples:</h5>
+						<div class="alert alert-primary" role="alert">
+							This is a primary alert—check it out!
 						</div>
 						<div class="alert alert-secondary" role="alert">
-						  This is a secondary alert—check it out!
+							This is a secondary alert—check it out!
 						</div>
 						<div class="alert alert-success" role="alert">
-						  This is a success alert—check it out!
+							This is a success alert—check it out!
 						</div>
 						<div class="alert alert-danger" role="alert">
-						  This is a danger alert—check it out!
+							This is a danger alert—check it out!
 						</div>
 						<div class="alert alert-warning" role="alert">
-						  This is a warning alert—check it out!
+							This is a warning alert—check it out!
 						</div>
 						<div class="alert alert-info" role="alert">
-						  This is a info alert—check it out!
+							This is a info alert—check it out!
 						</div>
 						<div class="alert alert-light" role="alert">
-						  This is a light alert—check it out!
+							This is a light alert—check it out!
 						</div>
 						<div class="alert alert-dark" role="alert">
-						  This is a dark alert—check it out!
+							This is a dark alert—check it out!
 						</div>
-                        
-                       
-					</section><!--//section-->
-                    <!-- sub heading content  end-->
-					
-                    <!-- sub heading gallary content -->
+
+
+					</section>
+					<!--//section-->
+					<!-- sub heading content  end-->
+
+					<!-- sub heading gallary content -->
 
 					<section class="docs-section" id="item-1-2">
-						<h2 class="section-heading">Section Item 1.2</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+						<!-- <h2 class="section-heading">Section Item 1.2</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
+							leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
+							felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
+							in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
+							arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
 						<h5 class="mt-5">Lightbox Example:</h5>
-						
-						<p>The example below uses the <i class="fas fa-external-link-alt"></i> <a class="theme-link" href="https://github.com/andreknieriem/simplelightbox" target="_blank">simplelightbox plugin</a>. </p>
-						
-						<div class="simplelightbox-gallery row mb-3">
+
+						<p>The example below uses the <i class="fas fa-external-link-alt"></i> <a class="theme-link"
+								href="https://github.com/andreknieriem/simplelightbox" target="_blank">simplelightbox
+								plugin</a>. </p> -->
+
+						<!-- <div class="simplelightbox-gallery row mb-3">
 							<div class="col-12 col-md-4 mb-3">
-						        <a href="assets/images/coderpro-home.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/coderpro-home-thumb.png" alt="" title="CoderPro Home Page"/></a>
+								<a href="assets/images/coderpro-home.png"><img
+										class="figure-img img-fluid shadow rounded"
+										src="assets/images/coderpro-home-thumb.png" alt=""
+										title="CoderPro Home Page" /></a>
+							</div> -->
+						<!-- <div class="col-12 col-md-4 mb-3">
+								<a href="assets/images/coderpro-features.png"><img
+										class="figure-img img-fluid shadow rounded"
+										src="assets/images/coderpro-features-thumb.png" alt=""
+										title="CoderPro Features Page" /></a>
+							</div> -->
+						<!--//col-->
+						<!-- <div class="col-12 col-md-4 mb-3">
+							<a href="assets/images/coderpro-pricing.png"><img
+									class="figure-img img-fluid shadow rounded"
+									src="assets/images/coderpro-pricing-thumb.png" alt=""
+									title="CoderPro Pricing Page" /></a>
+						</div> -->
+						<!--//col-->
+
+			</div>
+			<!--//gallery-->
+
+			</section>
+			<!--//section-->
+			<!-- sub heading gallary content -->
+
+			</article>
+
+			<article class="docs-article" id="section-2">
+				<header class="docs-header">
+					<h1 class="docs-heading">Installation</h1>
+					<section class="docs-intro">
+						<p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+							finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit.
+							Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam
+							lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+					</section>
+					<!--//docs-intro-->
+				</header>
+				<section class="docs-section" id="installation-1">
+					<h2 class="section-heading">Quick Installation</h2>
+
+					<div>
+						<h5>formsflow.ai Single click installation</h5>
+
+						<ul>
+							<li>Download batch file <a href="">Windows</a> <a href="">Linux</a></li>
+						</ul>
+
+						<p>This is a distribution of formsflow.ai latest release.
+							 </p>
+						<h5 id="table-of-contents">Table of Contents</h5>
+						<ol>
+							<li><a href="#summary">Summary</a></li>
+							<li><a href="#dependency">Dependencies</a></li>
+							<li><a href="#installation">installation</a></li>
+						</ol>
+						<h4 id="summary">Summary</h4>
+						<p>The root directory contains the install script for windows. After executing it, you can
+							access the web applications by following the link from <a
+								href="../../#verifying-the-installation-status">here</a></p>
+						<h4 id="dependency">Dependencies</h4>
+						<ol>
+							<div>
+								<ul>
+									<li><a href="https://docs.docker.com/engine/install/">Docker</a></li>
+									<li><a href="https://git-scm.com/">Git</a></li>
+								</ul>
 							</div>
-							<div class="col-12 col-md-4 mb-3">
-						        <a href="assets/images/coderpro-features.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/coderpro-features-thumb.png" alt="" title="CoderPro Features Page"/></a>
-							</div><!--//col-->
-							<div class="col-12 col-md-4 mb-3">
-						        <a href="assets/images/coderpro-pricing.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/coderpro-pricing-thumb.png" alt="" title="CoderPro Pricing Page"/></a>
-							</div><!--//col-->
-							
-						</div><!--//gallery-->
-						
-					</section><!--//section-->
-                    <!-- sub heading gallary content -->
-					
-			    </article>
-			    
-			    <article class="docs-article" id="section-2">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Installation</h1>
-					    <section class="docs-intro">
-						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
-						</section><!--//docs-intro-->
-				    </header>
-				     <section class="docs-section" id="installation-1">
-						<h2 class="section-heading">Quick Installation</h2>
-						 <div>
-							 <h4>Dependencies</h4>
-							 <ul>
-								<li><a href="https://docs.docker.com/engine/install/">Docker</a></li>
-								<li><a href="https://git-scm.com/">Git</a></li>
-							</ul>
-						 </div>
-						 <div>
-							 <h4>Step 1</h4>
-							 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero blanditiis in, cum soluta sit quibusdam eligendi, dolorem perspiciatis quisquam, sequi laborum odio impedit quam. Illum suscipit reprehenderit dicta doloribus aspernatur.</p>
-							 <ul>
-								 <li>Download batch file <a href="">Windows</a> <a href="">Linux</a></li>
-							 </ul>
-							 <h4>Step 2</h4>
-							 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempora quos iusto architecto excepturi. Maxime cum provident molestiae! Deserunt obcaecati est maxime. Modi aut, sint hic quia perspiciatis dolor laboriosam?</p>
-							 <ul>
-								 <li>Run batch file on command prompt as adminstartor </li>
-							 </ul>
-						 </div>
-						 <div>
+						</ol>
+						<h4 id="installation">Installation</h4>
+						<pre><code>  This setup <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> recommended <span class="hljs-keyword">for</span> production <span class="hljs-keyword">use</span>
+							</code></pre>
+						<ul>
+							<li>In the base directory execute install script by double clicking on the install.bat
+								(For Windows).</li>
+							<li>The following image depicts the installation flow with user input required for
+								configuration.</li>
+						</ul>
+						<p><img src="https://user-images.githubusercontent.com/94040192/160104985-35e13a88-1384-48e7-8701-87ac9fc66cb1.jpg"
+								alt="Drawing (3)"></p>
+
+
+
+
+
+
+						<!-- <h4>Step 2</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempora quos iusto
+							architecto excepturi. Maxime cum provident molestiae! Deserunt obcaecati est maxime.
+							Modi aut, sint hic quia perspiciatis dolor laboriosam?</p>
+						<ul>
+							<li>Run batch file on command prompt as adminstartor </li>
+						</ul>
+					</div> -->
+						<div>
 							<h5>testing List Examples:</h5>
 							<ul>
 								<li> Web</strong> <a href="">http://localhost:3000</a></li>
 								<li> Web</strong> <a href="">http://localhost:3000</a></li>
 								<li> Web</strong> <a href="">http://localhost:3000</a></li>
-								 
+
 							</ul>
 
-						 </div>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="installation-2">
-						<h2 class="section-heading">Section Item 2.2</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="installation-3">
-						<h2 class="section-heading">Section Item 2.3</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-					<section class="docs-section" id="installation-4">
-						<h2 class="section-heading">Section Item 2.3</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-			    </article><!--//docs-article-->
-			    
-			   
-			    
-			    
-			    <article class="docs-article" id="section-9">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">FAQs</h1>
-					    <section class="docs-intro">
-						    <p>Section intro goes here. You can list all your FAQs using the format below.</p>
-						</section><!--//docs-intro-->
-				    </header>
-				     <section class="docs-section" id="item-9-1">
-						<h2 class="section-heading">Section Item 9.1 <small>(FAQ Category One)</small></h2>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What's sit amet quam eget lacinia?</h5>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How to ipsum dolor sit amet quam tortor?</h5>
-						<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I  bibendum sodales?</h5>
-						<p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Where arcu sed urna gravida?</h5>
-						<p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo. Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-9-2">
-						<h2 class="section-heading">Section Item 9.2 <small>(FAQ Category Two)</small></h2>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What's sit amet quam eget lacinia?</h5>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How to ipsum dolor sit amet quam tortor?</h5>
-						<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I  bibendum sodales?</h5>
-						<p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Where arcu sed urna gravida?</h5>
-						<p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo. Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-9-3">
-							<h2 class="section-heading">Section Item 9.3 <small>(FAQ Category Three)</small></h2>
-						    <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How to dapibus sollicitudin justo vel fermentum?</h5>
-							<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-							<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How long bibendum sodales?</h5>
-							<p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-							<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Where dapibus sollicitudin?</h5>
-							<p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo. Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
-					</section><!--//section-->
-			    </article><!--//docs-article-->
+						</div>
+				</section>
+				<!--//section-->
 
-			    <footer class="footer">
-				    <div class="container text-center py-5">
-				        <small class="copyright">Copyright &copy; <a href="https://formsflow.ai/" target="_blank">formsflow.ai</a></small>
-				        <ul class="social-list list-unstyled pt-4 mb-0">
-						    <li class="list-inline-item"><a href="https://github.com/AOT-Technologies/forms-flow-ai"><i class="fab fa-github fa-fw"></i></a></li> 
-				            <li class="list-inline-item"><a href="https://twitter.com/formsflowai"><i class="fab fa-twitter fa-fw"></i></a></li>
-				            <li class="list-inline-item"><a href="https://www.linkedin.com/company/aot-technologies/products/"><i class="fab fa-linkedin-in"></i></a></li>
-				            <li class="list-inline-item"><a href="https://www.facebook.com/formsflowai"><i class="fab fa-facebook-f fa-fw"></i></a></li>
-				            <li class="list-inline-item"><a href="https://www.instagram.com/formsflow.ai/"><i class="fab fa-instagram fa-fw"></i></a></li>
-				        </ul><!--//social-list-->
-				    </div>
-			    </footer>
-		    </div> 
-	    </div>
-    </div><!--//docs-wrapper-->
-   
-       
-    <!-- Javascript -->          
-    <script src="assets/plugins/popper.min.js"></script>
-    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
-    
-    
-    <!-- Page Specific JS -->
-    <script src="assets/plugins/smoothscroll.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
-    <script src="assets/js/highlight-custom.js"></script> 
-    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>      
-    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
-    <script src="assets/js/docs.js"></script> 
-   
+				<section class="docs-section" id="installation-2">
+					<p>In the following document, we’ll describe about the different project dependencies, and the
+						installation options being supported.</p>
+					<h2 id="table-of-contents">Table of Contents</h2>
+					<ol>
+						<li><a href="#prerequisites">Prerequisites</a></li>
+						<li><a href="#download-the-formsflowai">Download the formsflow.ai</a></li>
+						<li><a href="#installation">Installation</a>
+							<ul>
+								<li><a href="#docker-based-installation">Docker</a></li>
+								<li><a href="#openshift-based-installation">Openshift</a></li>
+							</ul>
+						</li>
+						<li><a href="#verifying-the-installation-status">Verifying the Installation Status</a></li>
+					</ol>
+					<h2 id="prerequisites">Prerequisites</h2>
+					<ul>
+						<li>Admin access to a local or remote server (can be local Windows PC or Mac provided it is
+							<strong>64</strong>-bit with at least <strong>16GB</strong> RAM and
+							<strong>25GB</strong> HDD)
+						</li>
+						<li>For docker based installation <a href="https://docker.com">Docker</a> needs to be
+							installed.<ul>
+								<li>For <strong>Mac</strong>, make sure the <a
+										href="https://docs.docker.com/docker-for-mac/#resources">docker for mac</a>
+									memory allocation is set to at least <strong>16GB</strong>. </li>
+							</ul>
+						</li>
+					</ul>
+					<h2 id="download-the-formsflow-ai">Download the formsflow.ai</h2>
+					<ul>
+						<li>Clone this github repo: <a
+								href="https://github.com/AOT-Technologies/forms-flow-ai">https://github.com/AOT-Technologies/forms-flow-ai</a>
+						</li>
+						<li>If deploying to a remote server, you can use nginx as a reverse proxy and SSL engine. To
+							help you, follow the instructions in the nginx <a href="./server/nginx/README.md">README</a>
+						</li>
+					</ul>
+					<h2 id="installation">Installation</h2>
+					<p>There are multiple options for installing formsflow.ai. They are given below</p>
+					<ul>
+						<li>Docker Based installation<ul>
+								<li><a href="#docker-single-click-installation">Docker single click installation</a>
+								</li>
+								<li><a href="#Docker-Full-Deployment">Docker Full Deployment</a></li>
+								<li><a href="#Docker-Individual-Service-Deployment">Docker Individual Service
+										Deployment</a></li>
+							</ul>
+						</li>
+						<li>Openshift Based Installation<ul>
+								<li><a href="#Openshift-Full-Deployment">Openshift Full Deployment</a></li>
+							</ul>
+						</li>
+					</ul>
+					<h3 id="docker-based-installation">Docker Based Installation</h3>
+					<hr>
+					<h4 id="docker-single-click-installation">Docker single click installation</h4>
+					<p>Download the compressed <a
+							href="https://github.com/AOT-Technologies/forms-flow-ai/blob/master/deployment/docker/bundle/bundle.zip">bundle</a>
+						and follow
+						the instructions from <a
+							href="https://github.com/athira-aot/athira-aot.github.io/blob/main/Quick%20Installation.md">readme</a>.
+					</p>
+					<h4 id="docker-full-deployment">Docker Full Deployment</h4>
+					<p>Follow the instructions on <a href="./docker">docker installation guide</a></p>
+					<h4 id="docker-individual-service-deployment">Docker Individual Service Deployment</h4>
+					<p>Install the components in the listed order. <em>(NOTE: Keycloak, form.io and redash
+							dependencies are used on other components)</em></p>
+					<ul>
+						<li><a href="../forms-flow-idm/keycloak">Keycloak</a> Identity keycloak components</li>
+						<li><a href="../forms-flow-forms">forms-flow-forms</a> formsflow.ai integration with form.io
+						</li>
+						<li><a href="../forms-flow-analytics">forms-flow-analytics</a> Redash analytics components
+						</li>
+						<li><a href="../forms-flow-bpm">forms-flow-bpm</a> Camunda Workflow deployment and
+							integration</li>
+						<li><a href="../forms-flow-api">forms-flow-api</a> REST API of formsflow.ai</li>
+						<li><a href="../forms-flow-web">forms-flow-web</a> formsflow.ai integration web UI</li>
+					</ul>
+					<h3 id="openshift-based-installation">Openshift Based Installation</h3>
+					<hr>
+					<h4 id="openshift-full-deployment">Openshift Full Deployment</h4>
+					<p> Follow the instructions on <a
+							href="https://github.com/athira-aot/athira-aot.github.io/blob/main/openshift%20installation%20.md">openshift
+							installation guide</a></p>
+
+				</section>
+
+
+
+				<section>
+					<div>
+						<h1>Internationalization</h1>
+						<h4>Localization</h4>
+						<p>This feature enable the user to add new language according to their preference. Currently we
+							are providing you with five languages :
+						<ol>
+							<li>English</li>
+							<li>Chinese</li>
+							<li>Portuguese</li>
+							<li>French</li>
+							<li>Bulgarian</li>
+
+						</ol>
+						</P>
+						<h4>To add a new language</h4>
+						<ul>
+							<li>Select 'translations' folder from forms-flow-web/src</li>
+							<li>Create a folder structure as shown below</li>
+							<li>Folder name should be the abbreviation of the required language (example : Bulgarian- bg
+								)</li>
+							<li>Create a file named translations.js inside the folder</li>
+							<img src="./assets/images/image.png">
+							<li>Now open folder 'en' from the same folder 'translations'</li>
+							<li>Copy the content of en/translations.js and paste it to the newly created file
+							</li>
+							<img src="./assets/images/image (1).png">
+
+							<li>Change 'EN' to 'BG'</li>
+							<li>Copy each value from the key: "value" and translate the same using google
+								translator to the required language </li>
+							<li>Paste the the translated language to the file</li>
+							<img src="./assets/images/image (2).png">
+							<li>At 'translations/i18n.js' make the required changes as shown below for
+								'bg' : </li>
+							<img src="./assets/images/image (3).png">
+						</ul>
+						<h4>Add to dropdown</h4>
+						<p>To add the new language to drop down option :</p>
+						<ul>
+							<li>Open forms-flow-web/src/containers/NavBar.jsx </li>
+							<li>Translate the name of the language using google translater and make the changes in the
+								file as shown below </li>
+							<img src="./assets/images/image (4).png">
+							<li>Now you can select your prefered language from the dropdown</li>
+							<img src="./assets/images/image (5).png">
+
+						</ul>
+
+					</div>
+				</section>
+				<!--//section-->
+
+				<section class="docs-section" id="installation-3">
+
+					<h3 id="anonymous-workflow">Anonymous workflow</h3>
+					<p>Create a new form or Edit an already created form .Check the field asking whether you want to
+						make the form public?
+						<img src="./assets/images/166641751-b7f4df20-959d-485a-ac41-cc688e9f6762 (1).png" </p>
+					<p>2.Assosiate a workflow if you want and move to the next stage.</p>
+					<p>3.In this stage, you can copy the anonymous form url and publish the form to the client.</p>
+					<p><img src="./assets/images/166641111-41401eb1-4c42-4198-99b5-e66200d20498.png" alt="image"></p>
+					<ol>
+						<li>For anonymous users,form will display on pasting the copied url.There will be a login option
+							too</li>
+					</ol>
+					<p>Note- forms that are made anonymous and public will only appear publicly.
+						<img src="https://user-images.githubusercontent.com/86649870/166641457-2cfd059f-26f4-4eed-bcd5-3737d5516049.png"
+							alt="image">
+					</p>
+
+				</section>
+				<!--//section-->
+				<section class="docs-section" id="installation-4">
+					<h2 class="section-heading">AnonymousF</h2>
+					<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
+						leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
+						felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
+						in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
+						arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+				</section>
+				<!--//section-->
+			</article>
+			<!--//docs-article-->
+
+
+
+
+			<article class="docs-article" id="section-9">
+				<header class="docs-header">
+					<h1 class="docs-heading">FAQs</h1>
+					<section class="docs-intro">
+						<p>Section intro goes here. You can list all your FAQs using the format below.</p>
+					</section>
+					<!--//docs-intro-->
+				</header>
+				<section class="docs-section" id="item-9-1">
+					<h2 class="section-heading">Section Item 9.1 <small>(FAQ Category One)</small></h2>
+					<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What's sit amet quam eget lacinia?
+					</h5>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+						Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+						ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+						consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+						arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu
+						pede mollis pretium.</p>
+					<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How to ipsum dolor sit amet quam
+						tortor?</h5>
+					<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus
+						nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus
+						quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
+					<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I bibendum sodales?</h5>
+					<p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy
+						id, metus. Nullam accumsan lorem in dui. </p>
+					<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Where arcu sed urna gravida?</h5>
+					<p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam
+						mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo.
+						Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida
+						lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
+				</section>
+				<!--//section-->
+
+				<section class="docs-section" id="item-9-2">
+					<h2 class="section-heading">Section Item 9.2 <small>(FAQ Category Two)</small></h2>
+					<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What's sit amet quam eget lacinia?
+					</h5>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+						Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+						ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+						consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+						arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu
+						pede mollis pretium.</p>
+					<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How to ipsum dolor sit amet quam
+						tortor?</h5>
+					<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus
+						nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus
+						quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
+					<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I bibendum sodales?</h5>
+					<p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy
+						id, metus. Nullam accumsan lorem in dui. </p>
+					<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Where arcu sed urna gravida?</h5>
+					<p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam
+						mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo.
+						Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida
+						lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
+				</section>
+				<!--//section-->
+
+				<section class="docs-section" id="item-9-3">
+					<h2 class="section-heading">Section Item 9.3 <small>(FAQ Category Three)</small></h2>
+					<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How to dapibus sollicitudin justo
+						vel fermentum?</h5>
+					<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus
+						nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus
+						quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
+					<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How long bibendum sodales?</h5>
+					<p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy
+						id, metus. Nullam accumsan lorem in dui. </p>
+					<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Where dapibus sollicitudin?</h5>
+					<p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam
+						mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo.
+						Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida
+						lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
+				</section>
+				<!--//section-->
+			</article>
+			<!--//docs-article-->
+
+			<footer class="footer">
+				<div class="container text-center py-5">
+					<small class="copyright">Copyright &copy; <a href="https://formsflow.ai/"
+							target="_blank">formsflow.ai</a></small>
+					<ul class="social-list list-unstyled pt-4 mb-0">
+						<li class="list-inline-item"><a href="https://github.com/AOT-Technologies/forms-flow-ai"><i
+									class="fab fa-github fa-fw"></i></a></li>
+						<li class="list-inline-item"><a href="https://twitter.com/formsflowai"><i
+									class="fab fa-twitter fa-fw"></i></a></li>
+						<li class="list-inline-item"><a
+								href="https://www.linkedin.com/company/aot-technologies/products/"><i
+									class="fab fa-linkedin-in"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.facebook.com/formsflowai"><i
+									class="fab fa-facebook-f fa-fw"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.instagram.com/formsflow.ai/"><i
+									class="fab fa-instagram fa-fw"></i></a></li>
+					</ul>
+					<!--//social-list-->
+				</div>
+			</footer>
+		</div>
+	</div>
+	</div>
+	<!--//docs-wrapper-->
+
+
+	<!-- Javascript -->
+	<script src="assets/plugins/popper.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+
+	<!-- Page Specific JS -->
+	<script src="assets/plugins/smoothscroll.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+	<script src="assets/js/highlight-custom.js"></script>
+	<script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+	<script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+	<script src="assets/js/docs.js"></script>
+
 </body>
+
 </html>
