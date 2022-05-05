@@ -91,7 +91,7 @@
 					<li class="nav-item"><a class="nav-link scrollto" href="#installation-2">Download and
 							Installation</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#installation-3">Anonymous</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#installation-4">Defulat credentials</a>
+					<li class="nav-item"><a class="nav-link scrollto" href="#usage">usage-instructions</a>
 					</li>
 					<!-- main heading -->
 					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span
@@ -148,531 +148,703 @@
 								<img src="./assets/images/How It works.jpg" alt="Creating new form">
 							</p>
 							<br>
-							<div>
-								<h1 id="usage-instructions">Usage Instructions</h1>
-								<p>In the following document, we’ll describe the step by step instructions to set up a
-									working sample in the formsflow.ai solution.</p>
-								<h3 id="table-of-contents">Table of Contents</h3>
-								<ol>
-									<li><a href="#usage-instructions">Usage Instructions</a>
-										<ul>
-											<li><a href="#designer-steps">STEP 1 : Designer Steps</a></li>
-											<li><a href="#client-steps">STEP 2 : Client Steps</a></li>
-											<li><a href="#reviewer-steps">STEP 3 : Reviewer Steps</a></li>
-										</ul>
-									</li>
-									<li><a href="#usage-instructions-with-example">Usage Instructions with examples</a>
-										<ul>
-											<li><a href="#freedom-of-information-and-protection-of-privacy">Freedom of
-													Information and Protection of Privacy</a>
-												<ul>
-													<li><a href="#designer--steps">STEP 1 : Designer Steps</a></li>
-													<li><a href="#client--steps">STEP 2 : Client Steps</a></li>
-													<li><a href="#reviewer--steps">STEP 3 : Reviewer Steps</a></li>
-												</ul>
-											</li>
-											<li><a href="#create-new-business-license-application">Create New Business
-													License Application</a>
-												<ul>
-													<li><a href="#designer---steps">STEP 1 : Designer Steps</a></li>
-													<li><a href="#client---steps">STEP 2 : Client Steps</a></li>
-													<li><a href="#clerk-steps">STEP 3 : Clerk Steps</a></li>
-													<li><a href="#approver-steps">STEP 4 : Approver Steps</a></li>
-												</ul>
-											</li>
-										</ul>
-									</li>
-									<li><a href="#links">Links</a></li>
-								</ol>
-								<h3 id="usage-instructions">Usage Instructions</h3>
-								<blockquote>
-									<p>The following instructions can be followed to use formsflow.ai solution after the
-										successful healthcheck of all formsflow.ai services.</p>
-								</blockquote>
-								<h3 id="designer-steps">Designer Steps</h3>
-								<ul>
-									<li>Log in to <a href="http://localhost:3000">http://localhost:3000</a>
-										(forms-flow-web) with valid <a
-											href="./forms-flow-idm/keycloak/README.md#formsflow-ai-user-credentials">user
-											credentials for the designer</a>.</li>
-									<li>After the log in is successful, you will be redirected to <a
-											href="http://localhost:3000/form">http://localhost:3000/form</a> where you
-										can <code>Create/View/Edit/Delete a form</code>.</li>
-									<li>To create a form click on <strong>Create Form Button</strong>, you can use the
-										Drag-and-drop forms-builder to create a new form.</li>
-									<li>Once the form creation is completed click on <strong>Save &amp; Preview
-											Button</strong>, you can also modify the form by clicking on <strong>Edit
-											Button</strong> else click on the <strong>Next Button</strong> to proceed
-										further at this point.</li>
-									<li>At this stage form designing is completed, you can click on the <strong>EDIT
-											Button</strong> and associate a suitable workflow as per the business
-										requirement.<blockquote>
-											<p>Workflows that are marked as [Internal] should not be associated with a
-												form.</p>
-										</blockquote>
-									</li>
-									<li>After the workflow association is completed click on the <strong>Next
-											Button</strong> to preview and confirm.</li>
-									<li>You can click on the <strong>EDIT Button</strong> and select
-										<code>publish the form for clients</code> to send it for client usage.
-									</li>
-									<li>Click on <strong>SAVE Button</strong> to complete the design part.</li>
-									<li>Form designing is successfully completed, you can now <strong>Log out</strong>
-										and go to <a href="#client-steps">Client Steps</a> </li>
-								</ul>
-								<h3 id="client-steps">Client Steps</h3>
-								<ul>
-									<li>Log in to <a href="http://localhost:3000">http://localhost:3000</a>
-										(forms-flow-web) with valid <a
-											href="./forms-flow-idm/keycloak/README.md#formsflow-ai-user-credentials">user
-											credentials for the client</a>.</li>
-									<li>After the Log in is successful you will be redirected to <a
-											href="http://localhost:3000/form">http://localhost:3000/form</a> where you
-										can <code>View and Submit a form</code>.</li>
-									<li>Click on <strong>Submit New Button</strong> to fill a form and submit it.</li>
-									<li>Fill in the details and submit the form, You can repeat this action as per your
-										requirement.</li>
-									<li>If you had associated a workflow with the form then the workflow will be
-										started.</li>
-									<li>This action is completed, you can now Log out and go to <a
-											href="#reviewer-steps">Reviewer Steps</a> if you have a user review
-										mentioned in your workflow.</li>
-								</ul>
-								<h3 id="reviewer-steps">Reviewer Steps</h3>
-								<ul>
-									<li>Log in to <a href="http://localhost:3000">http://localhost:3000</a>
-										(forms-flow-web) with valid <a
-											href="./forms-flow-idm/keycloak/README.md#formsflow-ai-user-credentials">user
-											credentials for the reviewer</a>.</li>
-									<li>After successful Log in, you will be redirected to <a
-											href="http://localhost:3000/task">http://localhost:3000/task</a> where you
-										can navigate to the <code>Tasks tab</code> to see the tasks pending to be
-										reviewed.</li>
-									<li>You can click on a task item to review the task and take an action. There are
-										options to <strong>Filter Tasks</strong> and <strong>sort by Created
-											Date</strong> to easily search for the task you want.</li>
-									<li>On selecting a task item there are options to modify the <strong>Assignee/
-											Groups / Due Date / FollowUp Date</strong>.</li>
-									<li>Also, you can view the <strong>Form/ History / Diagram</strong></li>
-									<li>You can navigate to the <strong>Applications tab</strong> to view form
-										submissions.</li>
-									<li>You can view the submissions against a form by clicking on <strong>View
-											Submissions Button</strong></li>
-									<li>You can also submit a new form using <a href="#client-steps">STEP 2</a> from the
-										Forms Tab.</li>
-									<li>You can navigate to the <strong>Dashboards</strong> tab to see the analytics of
-										our solution<ul>
-											<li>You can navigate to the <strong>Metrics</strong> tab to see an overview
-												of the total form submissions and associated application status to
-												indicate which stage of workflow it is now.</li>
-											<li>You can navigate to the <strong>Insights</strong> tab to see a wonderful
-												dashboard created in the formsflow.ai analytics server.</li>
-										</ul>
-									</li>
-									<li>Reviewer action is completed.<blockquote>
-											<p>Clerk &amp; Approver are part of the main group Reviewer, so the steps
-												are similar to Reviewer Steps.</p>
-											<h2 id="usage-instructions-with-examples">Usage Instructions with examples
-											</h2>
-										</blockquote>
-									</li>
-								</ul>
-								<h2 id="freedom-of-information-and-protection-of-privacy">Freedom of Information and
-									Protection of Privacy</h2>
-								<blockquote>
-									<p>The following instructions are using an example from the form.io -
-										<code>Freedom of Information and Protection of Privacy</code>.
+							<section>
+								<div>
+									<h1 id="system-architecture">System Architecture</h1>
+									<img src="./assets/images/formsflow-ai-components.png" alt="image" width="700"
+										height="500"><br><br>
+									<h2 id="components">Components</h2>
+									<p>The components of the system are:</p>
+									<h3 id="formsflow-ui">formsflow UI</h3>
+									<p>Browser-based React integration web UI Most of the day-to-day end-user and review
+										tasks are performed from this application, built specifically to act as a common
+										UI combining forms, workflow, and analytics functionality. The web application
+										is written as a <a
+											href="https://en.wikipedia.org/wiki/Progressive_web_application">progressive</a>
+										app with the potential for offline data-entry. formsflow UI accesses the
+										individual system component data through native API&#39;s using OIDC or SAML
+										access tokens.</p>
+									<h3 id="formsflow-ui-extension-for-vue-js-optional-">formsflow UI Extension for
+										Vue.js (optional)</h3>
+									<p>There is a Vue.js based web user interface for easy integration of formsflow.ai
+										to your existing User Interface. This extension provides components for easily
+										using Forms, Tasklist by installing as a npm package. To know more details
+										checkout <a
+											href="https://github.com/AOT-Technologies/forms-flow-ai-extensions/tree/master/camunda-formio-tasklist-vue">formsflow-ai-extension
+											repository</a>and to install package <a
+											href="https://www.npmjs.com/package/camunda-formio-tasklist-vue">go
+											here.</a></p>
+									<h3 id="redash-admin-ui">Redash Admin UI</h3>
+									<p>The native admin interface to Redash (bundled and unchanged). Use this to build
+										analytics dashboards.</p>
+									<h3 id="redash-api">Redash API</h3>
+									<p>The REST interface to the Redash core. Bundled and unchanged</p>
+									<h3 id="form-io-api">Form.io API</h3>
+									<p>The REST interface to the form.io core</p>
+									<h3 id="camunda-admin-ui">Camunda Admin UI</h3>
+									<p>The native admin interface to Camunda (bundled and unchanged) . Use this to
+										define workflows and to manage workflow tasks as an admin.</p>
+									<h3 id="rest-api">REST API</h3>
+									<p>Python REST API providing business logic around the internal formsflow.ai
+										Postgres database. This API is used extensively by the formsflow.ai UI to
+										synchronize, maintain state, extend functionality, and integrate between
+										components.</p>
+									<h3 id="nginx-web-server-optional-">Nginx Web server (optional)</h3>
+									<p>Webserver providing reverse-proxy redirection and SSL to components for remote
+										deployments. ( bundled and configured )</p>
+									<h3 id="keycloak-identity-management-server">Keycloak Identity management server
+									</h3>
+									<p>The system uses an existing (your) Keycloak server which provides a common
+										identity management capability. The system provides default installation and
+										provisioning of the Keycloak server for local setup, steps are mentioned <a
+											href="https://github.com/AOT-Technologies/forms-flow-ai/blob/master/forms-flow-idm/keycloak/README.md#local-keycloak-setup">here</a>.
+										However, you can setup your own Keycloak server and follow the provisioning
+										steps <a
+											href="https://github.com/AOT-Technologies/forms-flow-ai/blob/master/forms-flow-idm/keycloak/README.md#server-keycloak-setup">here</a>.
 									</p>
-								</blockquote>
-								<h3 id="designer-steps">Designer Steps</h3>
-								<ul>
-									<li>Log in to <a href="http://localhost:3000">http://localhost:3000</a>
-										(forms-flow-web) with valid <a
-											href="./forms-flow-idm/keycloak/README.md#formsflow-ai-user-credentials">user
-											credentials for the designer</a>.</li>
-									<li>After the log in is successful you will be redirected to <a
-											href="http://localhost:3000/form">http://localhost:3000/form</a> where you
-										can <code>Create / View / Edit / Delete</code> a form.</li>
-								</ul>
-								<p><img src="https://user-images.githubusercontent.com/83489861/124453516-1107d380-dda5-11eb-9dba-2742cabc8582.png"
-										alt="image"></p>
-								<ul>
-									<li>Select the <code>Freedom of Information and Protection of Privacy</code> form by
-										clicking on it.</li>
-									<li>You can modify the form by clicking on the <strong>View/Edit Form</strong>
-										button or continue by clicking the <strong>Next</strong> button.</li>
-								</ul>
-								<p><img src="https://user-images.githubusercontent.com/83489861/124475627-8d0f1500-ddbf-11eb-8ca1-5898bcc7d499.png"
-										alt="image"></p>
-								<ul>
-									<li>At this stage form designing is completed, you can click on the <strong>EDIT
-											Button</strong> and associate a workflow - One Step Approval. </li>
-								</ul>
-								<p><img src="https://user-images.githubusercontent.com/83489861/124475762-b6c83c00-ddbf-11eb-9911-41e55e2a9b9d.png"
-										alt="image"></p>
-								<ul>
-									<li>After the associate workflow is completed click on the <strong>Next
-											Button</strong> to Preview and Confirm.</li>
-									<li>You can click on the <strong>EDIT Button</strong> and publish the form for
-										clients.</li>
-								</ul>
-								<p><img src="https://user-images.githubusercontent.com/83489861/124475827-cba4cf80-ddbf-11eb-8b07-f8c2b23c25eb.png"
-										alt="image"></p>
-								<ul>
-									<li>
-										<p>Click on <strong>SAVE Button</strong> to completed designing a form.</p>
-									</li>
-									<li>
-										<p>Form designing is successfully completed, you can now Log out and go to <a
-												href="#client--steps">Client Steps</a></p>
-									</li>
-								</ul>
-								<h3 id="client-steps">Client Steps</h3>
-								<ul>
-									<li>Log in to <a href="http://localhost:3000">http://localhost:3000</a>
-										(forms-flow-web) with valid <a
-											href="./forms-flow-idm/keycloak/README.md#formsflow-ai-user-credentials">default
-											user credentials for the client</a>.</li>
-									<li>After the Log in is successful you will be redirected to <a
-											href="http://localhost:3000/form">http://localhost:3000/form</a> where you
-										can View and Submit a form.</li>
-								</ul>
-								<p><img src="https://user-images.githubusercontent.com/83489861/124476700-c72ce680-ddc0-11eb-9dba-31adf9d63a5e.png"
-										alt="image"></p>
-								<ul>
-									<li>Click <strong>Submit New Button</strong> on the form to fill and submit it.</li>
-								</ul>
-								<p><img src="https://user-images.githubusercontent.com/83584866/124597717-6d402580-de81-11eb-9b15-6e84bec7a8b3.PNG"
-										alt="Image 1"></p>
-								<ul>
-									<li>If you had associated a workflow with the form, the form will start the
-										workflow.</li>
-									<li>This action is completed, you can now Log out and go to <a
-											href="#reviewer--steps">Reviewer Steps</a> if you have a user review
-										mentioned in your workflow.</li>
-								</ul>
-								<h3 id="reviewer-steps">Reviewer Steps</h3>
-								<ul>
-									<li>Log in to <a href="http://localhost:3000">http://localhost:3000</a>
-										(forms-flow-web) with valid <a
-											href="./forms-flow-idm/keycloak/README.md#formsflow-ai-user-credentials">default
-											user credentials for the reviewer</a>.</li>
-									<li>After the Log in is successful you will be redirected to <a
-											href="http://localhost:3000/task">http://localhost:3000/task</a>.</li>
-								</ul>
-								<p><img src="https://user-images.githubusercontent.com/83584866/124597833-92349880-de81-11eb-8d47-6f724627a651.PNG"
-										alt="Image 9"></p>
-								<ul>
-									<li>You can navigate to the Applications tab to <strong>View the Form</strong>
-										submissions.</li>
-								</ul>
-								<p><img src="https://user-images.githubusercontent.com/83584866/124597926-b001fd80-de81-11eb-91ae-08002d5202cb.PNG"
-										alt="Image 10"></p>
-								<ul>
-									<li>You can View the submissions against a form by clicking on the
-										<strong>View</strong> button.
-									</li>
-								</ul>
-								<p><img src="https://user-images.githubusercontent.com/83584866/124598386-2acb1880-de82-11eb-8cb4-fe3249d3de93.PNG"
-										alt="Image 26"></p>
-								<ul>
-									<li>You can print the Form as a PDF.</li>
-								</ul>
-								<p><img src="https://user-images.githubusercontent.com/83584866/124598443-3cacbb80-de82-11eb-8a19-bfe379978864.PNG"
-										alt="Image 6"></p>
-								<ul>
-									<li>On clicking the associated task which was recently created ie. <em>Freedom of
-											Information and Protection of Privacy</em>, the task detailed menu usually
-										has three sections - <strong>Form</strong>, <strong>History</strong>,
-										<strong>Diagram</strong>
-									</li>
-								</ul>
-								<p><img src="https://user-images.githubusercontent.com/83584866/124598608-6f56b400-de82-11eb-9409-dcba892441c8.PNG"
-										alt="Image 15">
-									<img src="https://user-images.githubusercontent.com/83584866/124598662-7a114900-de82-11eb-8653-d370bc3aa7c9.PNG"
-										alt="Image 16">
-									<img src="https://user-images.githubusercontent.com/83584866/124598701-84cbde00-de82-11eb-9773-c84afbbd812c.PNG"
-										alt="Image 17">
-								</p>
-								<ul>
-									<li>On claiming the task, the Reviewer can fill the form and submit his/her review.
-									</li>
-								</ul>
-								<p><img src="https://user-images.githubusercontent.com/83584866/124598773-9b723500-de82-11eb-8070-5551ae2f1398.PNG"
-										alt="Image 18">
-									<img src="https://user-images.githubusercontent.com/83584866/124598911-c3619880-de82-11eb-85a2-f3f5f065ba9c.PNG"
-										alt="Image 19">
-									<img src="https://user-images.githubusercontent.com/83584866/124598962-cfe5f100-de82-11eb-8938-4309efd872fb.PNG"
-										alt="Image 20">
-								</p>
-								<ul>
-									<li>On the <strong>Application</strong> section, the form submission history can be
-										found and the form can be viewed.</li>
-								</ul>
-								<p><img src="https://user-images.githubusercontent.com/83584866/124599112-f015b000-de82-11eb-87ff-89ac9fb95d24.PNG"
-										alt="Image 21">
-									<img src="https://user-images.githubusercontent.com/83584866/124599317-2a7f4d00-de83-11eb-8bc1-5215bb9add03.PNG"
-										alt="Image 24">
-									<img src="https://user-images.githubusercontent.com/83584866/125240030-2a5dd200-e307-11eb-8ed4-ab46fe647534.PNG"
-										alt="Image 68">
-									<img src="https://user-images.githubusercontent.com/83584866/124599471-54387400-de83-11eb-8e53-ba9319748d2f.PNG"
-										alt="Image 26">
-								</p>
-								<ul>
-									<li>Reviewer action is completed.</li>
-								</ul>
-								<h2 id="create-new-business-license-application">Create New Business License Application
-								</h2>
-								<blockquote>
-									<p>The following instructions are using an example form from the form.io -
-										<code>Create New Business License Application</code>.
+
+								</div>
+							</section>
+							<section class="docs-section" id="item-1-1">
+								<div>
+									<h2 class="section-heading">About the Project</h2>
+									<p>Use cases of formsflow are:</p>
+									<ul>
+										<li>Applications for licenses</li>
+										<li>Public submissions</li>
+										<li>FOI requests</li>
+										<li>Applications for funding</li>
+										<li>Statements of compliance</li>
+										<li>Employee onboarding</li>
+										<li>Performance Reviews</li>
+										<li>Emergency processes</li>
+										<li>Escalations</li>
+										<li>Surveys</li>
+										<li>
+											<p>Case Management</p>
+											<h3 id="features">Features</h3>
+										</li>
+										<li>
+											<p>Drag-and-drop forms-builder with rich UI components</p>
+										</li>
+										<li>Lightweight server-based workflow engine with full capabilities including
+											human,
+											parallel, asynchronous and timed flows, decision engine, and graphical
+											designer</li>
+										<li>Notifications engine for notifications, reminders, and alerts on tasks and
+											even data
+											thresholds.</li>
+										<li>Metrics and data visualization dashboards for the display of key workflow
+											and form
+											data</li>
+										<li>Multi-tenancy isolation</li>
+										<li>Containerized deployment with docker, docker-compose, and Openshift</li>
+										<li>Flexible Identity Management uses existing IDM systems for authentication
+											and single
+											sign-on</li>
+
+										<li>Low Code Open Source Form Builder</li>
+										<li>Decision Engine</li>
+										<li>Custom Dashboards</li>
+										<li>Flexible IDM Systems</li>
+										<li>No License Fees</li>
+										<li>Rich UI Components</li>
+										<li>Notifications Engine</li>
+										<li>React Web UI</li>
+										<li>Quick Start</li>
+										<li>Lightweight Workflow Engine</li>
+										<li>Form Metrics</li>
+										<li>Task Alerts</li>
+										<li>Vue.js Web UI</li>
+										<li>Professional Support</li>
+										<li>Public or Private Cloud</li>
+										<li>Submission Insights</li>
+										<li>Fully Containerized</li>
+										<li>Secure User Roles</li>
+										<li>Regular Updates</li>
+									</ul>
+
 									</p>
-								</blockquote>
-								<h3 id="designer-steps">Designer Steps</h3>
-								<ul>
-									<li>Log in to <a href="http://localhost:3000">http://localhost:3000</a>
-										(forms-flow-web) with valid <a
-											href="./forms-flow-idm/keycloak/README.md#formsflow-ai-user-credentials">user
-											credentials for the designer</a>.</li>
-									<li>After the Log in is successful you will be redirected to <a
-											href="http://localhost:3000/form">http://localhost:3000/form</a> where you
-										can <code>Create / View / Edit / Delete</code> a form.</li>
-								</ul>
-								<p><img src="https://user-images.githubusercontent.com/83489861/124479964-69020280-ddc4-11eb-9739-18c44a770f76.png"
-										alt="image"></p>
-								<ul>
-									<li>Select the <code>New Business License Application</code> form by clicking on it.
-									</li>
-									<li>You can modify the form by clicking on the <strong>View/Edit Form</strong>
-										button or continue by clicking the <strong>Next</strong> button.</li>
-								</ul>
-								<p><img src="https://user-images.githubusercontent.com/83489861/124480017-76b78800-ddc4-11eb-9b31-e0b2df759656.png"
-										alt="image"></p>
-								<ul>
-									<li>At this stage form designing is completed, you can click on the <strong>EDIT
-											Button</strong> and associate a workflow - Two-Step Approval. </li>
-								</ul>
-								<p><img src="https://user-images.githubusercontent.com/83489861/124480123-9058cf80-ddc4-11eb-802c-b69bfc796685.png"
-										alt="image"></p>
-								<ul>
-									<li>After the associate workflow is completed click on the <strong>Next
-											Button</strong> to Preview and Confirm.</li>
-									<li>You can click on the <strong>EDIT Button</strong> and publish the form for
-										clients.</li>
-								</ul>
-								<p><img src="https://user-images.githubusercontent.com/83489861/124480173-9ea6eb80-ddc4-11eb-9b51-cf7c1ebbdb90.png"
-										alt="image"></p>
-								<ul>
-									<li>Click on <strong>SAVE Button</strong> to completed designing a form.</li>
-									<li>Form designing is successfully completed, you can now Log out and go to <a
-											href="#client---steps">Client Steps</a></li>
-								</ul>
-								<h3 id="client-steps">Client Steps</h3>
-								<ul>
-									<li>Log in to <a href="http://localhost:3000">http://localhost:3000</a>
-										(forms-flow-web) with valid <a
-											href="./forms-flow-idm/keycloak/README.md#formsflow-ai-user-credentials">default
-											user credentials for the client</a>.</li>
-									<li>After the Log in is successful you will be redirected to <a
-											href="http://localhost:3000/form">http://localhost:3000/form</a> where you
-										can View and Submit a form.</li>
-								</ul>
-								<p><img src="https://user-images.githubusercontent.com/83489861/124480279-b9796000-ddc4-11eb-83c5-894f8b5ea223.png"
-										alt="image"></p>
-								<ul>
-									<li>Click <strong>Submit New Button</strong> on the form which you wanted to submit.
-									</li>
-									<li>The previous action will redirect you to the form, where you can fill in the
-										details and Submit them.</li>
-								</ul>
-								<p><img src="https://user-images.githubusercontent.com/83584866/124552424-276b6900-de51-11eb-8e15-db699c944040.PNG"
-										alt="Image 2"></p>
-								<ul>
-									<li>
-										<p>Fill in the details and Submit the form, You can repeat this action as per
-											your requirement.</p>
-										<p><img src="https://user-images.githubusercontent.com/83584866/124552756-9052e100-de51-11eb-9c92-64f61ee1fa3a.png"
-												alt="Image 3"></p>
-									</li>
-									<li>If you had associated a workflow with the form, the form will start the
-										workflow.</li>
-									<li>This action is completed, you can now Log out and go to <a
-											href="#clerk-steps">Clerk Steps</a>.</li>
-								</ul>
-								<h3 id="clerk-steps">Clerk Steps</h3>
-								<ul>
-									<li>Log in to <a href="http://localhost:3000">http://localhost:3000</a>
-										(forms-flow-web) with valid <a
-											href="./forms-flow-idm/keycloak/README.md#formsflow-ai-user-credentials">default
-											user credentials for Clerk</a>.</li>
-									<li>After the Log in is successful you will be redirected to <a
-											href="http://localhost:3000/task">http://localhost:3000/task</a>.</li>
-								</ul>
-								<p><img src="https://user-images.githubusercontent.com/83584866/124553139-ffc8d080-de51-11eb-9476-46b925821b12.PNG"
-										alt="Image 10"></p>
-								<ul>
-									<li>You can navigate to the Applications tab to <strong>View the Form</strong>
-										submissions.</li>
-								</ul>
-								<p><img src="https://user-images.githubusercontent.com/83584866/124565163-5be62180-de5f-11eb-8115-680d3e4fe8cc.PNG"
-										alt="Image 12"></p>
-								<ul>
-									<li>You can View the submissions against a form by clicking on the
-										<strong>View</strong> button.
-									</li>
-								</ul>
-								<p><img src="https://user-images.githubusercontent.com/83584866/124565303-8506b200-de5f-11eb-889b-3710d08d62fa.PNG"
-										alt="Image 17"></p>
-								<ul>
-									<li>You can print the Form submission as a PDF.</li>
-								</ul>
-								<p><img src="https://user-images.githubusercontent.com/83584866/124565427-a6679e00-de5f-11eb-9fe4-266ba57ad0c3.PNG"
-										alt="Image 7"></p>
-								<p><img src="https://user-images.githubusercontent.com/83584866/124578912-46c3bf80-de6c-11eb-9bc4-03f24150a31d.PNG"
-										alt="Image 42"></p>
-								<ul>
-									<li>The associated task can be found for the Clerk role in the <strong>Task
-											Menu</strong> section</li>
-									<li>
-										<p>On clicking the associated task which was recently created ie. <em>New
-												Business License Application with Two-Step Approval</em>, the task
-											detailed menu usually has three sections - <strong>Form</strong>,
-											<strong>History</strong>, <strong>Diagram</strong>
-											<img src="https://user-images.githubusercontent.com/83584866/124566028-4a514980-de60-11eb-9eda-890aa7bf32f5.PNG"
-												alt="Image 18">
-											<img src="https://user-images.githubusercontent.com/83584866/124566338-94d2c600-de60-11eb-8d17-552bbd2c766f.PNG"
-												alt="Image 19">
-											<img src="https://user-images.githubusercontent.com/83584866/124566434-aa47f000-de60-11eb-964d-195d06d8a9eb.PNG"
-												alt="Image 20">
+								</div>
+							</section>
+							<section id="usage">
+								<div>
+									<h2 id="usage-instructions">Usage Instructions</h2>
+									<p>In the following document, we’ll describe the step by step instructions to set up
+										a
+										working sample in the formsflow.ai solution.</p>
+									<h3 id="table-of-contents">Table of Contents</h3>
+									<ol>
+										<li><a href="#usage-instructions">Usage Instructions</a>
+											<ul>
+												<li><a href="#designer-steps">STEP 1 : Designer Steps</a></li>
+												<li><a href="#client-steps">STEP 2 : Client Steps</a></li>
+												<li><a href="#reviewer-steps">STEP 3 : Reviewer Steps</a></li>
+											</ul>
+										</li>
+										<li><a href="#usage-instructions-with-example">Usage Instructions with
+												examples</a>
+											<ul>
+												<li><a href="#freedom-of-information-and-protection-of-privacy">Freedom
+														of
+														Information and Protection of Privacy</a>
+													<ul>
+														<li><a href="#designer--steps">STEP 1 : Designer Steps</a></li>
+														<li><a href="#client--steps">STEP 2 : Client Steps</a></li>
+														<li><a href="#reviewer--steps">STEP 3 : Reviewer Steps</a></li>
+													</ul>
+												</li>
+												<li><a href="#create-new-business-license-application">Create New
+														Business
+														License Application</a>
+													<ul>
+														<li><a href="#designer---steps">STEP 1 : Designer Steps</a></li>
+														<li><a href="#client---steps">STEP 2 : Client Steps</a></li>
+														<li><a href="#clerk-steps">STEP 3 : Clerk Steps</a></li>
+														<li><a href="#approver-steps">STEP 4 : Approver Steps</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li><a href="#links">Links</a></li>
+									</ol>
+
+									<blockquote>
+										<p>The following instructions can be followed to use formsflow.ai solution after
+											the
+											successful healthcheck of all formsflow.ai services.</p>
+									</blockquote>
+									<h3 id="designer-steps">Designer Steps</h3>
+									<ul>
+										<li>Log in to <a href="http://localhost:3000">http://localhost:3000</a>
+											(forms-flow-web) with valid <a
+												href="https://github.com/AOT-Technologies/forms-flow-ai/blob/master/forms-flow-idm/keycloak/README.md#formsflow-ai-user-credentials">user
+												credentials for the designer</a>.</li>
+										<li>After the log in is successful, you will be redirected to <a
+												href="http://localhost:3000/form">http://localhost:3000/form</a> where
+											you
+											can <code>Create/View/Edit/Delete a form</code>.</li>
+										<li>To create a form click on <strong>Create Form Button</strong>, you can use
+											the
+											Drag-and-drop forms-builder to create a new form.</li>
+										<li>Once the form creation is completed click on <strong>Save &amp; Preview
+												Button</strong>, you can also modify the form by clicking on
+											<strong>Edit
+												Button</strong> else click on the <strong>Next Button</strong> to
+											proceed
+											further at this point.
+										</li>
+										<li>At this stage form designing is completed, you can click on the <strong>EDIT
+												Button</strong> and associate a suitable workflow as per the business
+											requirement.<blockquote>
+												<p>Workflows that are marked as [Internal] should not be associated with
+													a
+													form.</p>
+											</blockquote>
+										</li>
+										<li>After the workflow association is completed click on the <strong>Next
+												Button</strong> to preview and confirm.</li>
+										<li>You can click on the <strong>EDIT Button</strong> and select
+											<code>publish the form for clients</code> to send it for client usage.
+										</li>
+										<li>Click on <strong>SAVE Button</strong> to complete the design part.</li>
+										<li>Form designing is successfully completed, you can now <strong>Log
+												out</strong>
+											and go to <a href="#client-steps">Client Steps</a> </li>
+									</ul>
+									<h3 id="client-steps">Client Steps</h3>
+									<ul>
+										<li>Log in to <a href="http://localhost:3000">http://localhost:3000</a>
+											(forms-flow-web) with valid <a
+												href="https://github.com/AOT-Technologies/forms-flow-ai/blob/master/forms-flow-idm/keycloak/README.md#formsflow-ai-user-credentials">user
+												credentials for the client</a>.</li>
+										<li>After the Log in is successful you will be redirected to <a
+												href="http://localhost:3000/form">http://localhost:3000/form</a> where
+											you
+											can <code>View and Submit a form</code>.</li>
+										<li>Click on <strong>Submit New Button</strong> to fill a form and submit it.
+										</li>
+										<li>Fill in the details and submit the form, You can repeat this action as per
+											your
+											requirement.</li>
+										<li>If you had associated a workflow with the form then the workflow will be
+											started.</li>
+										<li>This action is completed, you can now Log out and go to <a
+												href="#reviewer-steps">Reviewer Steps</a> if you have a user review
+											mentioned in your workflow.</li>
+									</ul>
+									<h3 id="reviewer-steps">Reviewer Steps</h3>
+									<ul>
+										<li>Log in to <a href="http://localhost:3000">http://localhost:3000</a>
+											(forms-flow-web) with valid <a
+												href="https://github.com/AOT-Technologies/forms-flow-ai/blob/master/forms-flow-idm/keycloak/README.md#formsflow-ai-user-credentials">user
+												credentials for the reviewer</a>.</li>
+										<li>After successful Log in, you will be redirected to <a
+												href="http://localhost:3000/task">http://localhost:3000/task</a> where
+											you
+											can navigate to the <code>Tasks tab</code> to see the tasks pending to be
+											reviewed.</li>
+										<li>You can click on a task item to review the task and take an action. There
+											are
+											options to <strong>Filter Tasks</strong> and <strong>sort by Created
+												Date</strong> to easily search for the task you want.</li>
+										<li>On selecting a task item there are options to modify the <strong>Assignee/
+												Groups / Due Date / FollowUp Date</strong>.</li>
+										<li>Also, you can view the <strong>Form/ History / Diagram</strong></li>
+										<li>You can navigate to the <strong>Applications tab</strong> to view form
+											submissions.</li>
+										<li>You can view the submissions against a form by clicking on <strong>View
+												Submissions Button</strong></li>
+										<li>You can also submit a new form using <a href="#client-steps">STEP 2</a> from
+											the
+											Forms Tab.</li>
+										<li>You can navigate to the <strong>Dashboards</strong> tab to see the analytics
+											of
+											our solution<ul>
+												<li>You can navigate to the <strong>Metrics</strong> tab to see an
+													overview
+													of the total form submissions and associated application status to
+													indicate which stage of workflow it is now.</li>
+												<li>You can navigate to the <strong>Insights</strong> tab to see a
+													wonderful
+													dashboard created in the formsflow.ai analytics server.</li>
+											</ul>
+										</li>
+										<li>Reviewer action is completed.<blockquote>
+												<p>Clerk &amp; Approver are part of the main group Reviewer, so the
+													steps
+													are similar to Reviewer Steps.</p>
+										</li>
+										</blockquote>
+									</ul>
+									<h2 id="usage-instructions-with-examples">Usage Instructions with examples
+									</h2>
+
+
+
+
+									<blockquote>
+										<p>The following instructions are using an example from the form.io -
+											<code>Freedom of Information and Protection of Privacy</code>.
 										</p>
-									</li>
-									<li>
-										<p>On claiming the task, the Clerk can fill the form and submit his/her review
-											with feedback.</p>
-									</li>
-									<li>
-										<p>Return option will send the form back to the client for edit and
-											resubmission.
-											<img src="https://user-images.githubusercontent.com/83584866/124566523-c0ee4700-de60-11eb-8d27-7b46f0a856e7.PNG"
-												alt="Image 21">
-											<img src="https://user-images.githubusercontent.com/83584866/125240658-03ec6680-e308-11eb-9655-153817406389.PNG"
-												alt="Image 22">
+									</blockquote>
+									<h3 id="designer-steps">Designer Steps</h3>
+									<ul>
+										<li>Log in to <a href="http://localhost:3000">http://localhost:3000</a>
+											(forms-flow-web) with valid <a
+												href="https://github.com/AOT-Technologies/forms-flow-ai/blob/master/forms-flow-idm/keycloak/README.md#formsflow-ai-user-credentials">user
+												credentials for the designer</a>.</li>
+										<li>After the log in is successful you will be redirected to <a
+												href="http://localhost:3000/form">http://localhost:3000/form</a> where
+											you
+											can <code>Create / View / Edit / Delete</code> a form.</li>
+									</ul>
+									<p><img src="https://user-images.githubusercontent.com/83489861/124453516-1107d380-dda5-11eb-9dba-2742cabc8582.png"
+											alt="image" width="1000" height="500"></p>
+									<ul>
+										<li>Select the <code>Freedom of Information and Protection of Privacy</code>
+											form by
+											clicking on it.</li>
+										<li>You can modify the form by clicking on the <strong>View/Edit Form</strong>
+											button or continue by clicking the <strong>Next</strong> button.</li>
+									</ul>
+									<p><img src="https://user-images.githubusercontent.com/83489861/124475627-8d0f1500-ddbf-11eb-8ca1-5898bcc7d499.png"
+											alt="image" width="1000" height="500"></p>
+									<ul>
+										<li>At this stage form designing is completed, you can click on the <strong>EDIT
+												Button</strong> and associate a workflow - One Step Approval. </li>
+									</ul>
+									<p><img src="https://user-images.githubusercontent.com/83489861/124475762-b6c83c00-ddbf-11eb-9911-41e55e2a9b9d.png"
+											alt="image" width="1000" height="500"></p>
+									<ul>
+										<li>After associating workflow click on the <strong>TASK VARIABLE
+											</strong> to add taskvariables.</li><br><br>
+
+										<p><img src="./assets/images/Screenshot 2022-05-05 154026.png" alt="image"
+												width="1000" height="500"></p>
+										<li>After that click on the <strong>Next </strong> Button to Preview and
+											Confirm.
+										</li>
+										<li>You can click on the <strong>EDIT Button</strong> and publish the form for
+											clients.</li>
+									</ul>
+									<p><img src="https://user-images.githubusercontent.com/83489861/124475827-cba4cf80-ddbf-11eb-8b07-f8c2b23c25eb.png"
+											alt="image" width="1000" height="500"></p>
+									<ul>
+										<li>
+											<p>Click on <strong>SAVE Button</strong> to completed designing a form.</p>
+										</li>
+										<li>
+											<p>Form designing is successfully completed, you can now Log out and go to
+												<a href="#client--steps">Client Steps</a>
+											</p>
+										</li>
+									</ul>
+									<h3 id="client-steps">Client Steps</h3>
+									<ul>
+										<li>Log in to <a href="http://localhost:3000">http://localhost:3000</a>
+											(forms-flow-web) with valid <a
+												href="https://github.com/AOT-Technologies/forms-flow-ai/blob/master/forms-flow-idm/keycloak/README.md#formsflow-ai-user-credentials">default
+												user credentials for the client</a>.</li>
+										<li>After the Log in is successful you will be redirected to <a
+												href="http://localhost:3000/form">http://localhost:3000/form</a> where
+											you
+											can View and Submit a form.</li>
+									</ul>
+									<p><img src="https://user-images.githubusercontent.com/83489861/124476700-c72ce680-ddc0-11eb-9dba-31adf9d63a5e.png"
+											alt="image" width="1000" height="500"></p>
+									<ul>
+										<li>Click <strong>Submit New Button</strong> on the form to fill and submit it.
+										</li>
+									</ul>
+									<p><img src="https://user-images.githubusercontent.com/83584866/124597717-6d402580-de81-11eb-9b15-6e84bec7a8b3.PNG"
+											alt="Image 1" width="1000" height="500"></p>
+									<ul>
+										<li>If you had associated a workflow with the form, the form will start the
+											workflow.</li>
+										<li>This action is completed, you can now Log out and go to <a
+												href="#reviewer--steps">Reviewer Steps</a> if you have a user review
+											mentioned in your workflow.</li>
+									</ul>
+									<h3 id="reviewer-steps">Reviewer Steps</h3>
+									<ul>
+										<li>Log in to <a href="http://localhost:3000">http://localhost:3000</a>
+											(forms-flow-web) with valid <a
+												href="https://github.com/AOT-Technologies/forms-flow-ai/blob/master/forms-flow-idm/keycloak/README.md#formsflow-ai-user-credentials">default
+												user credentials for the reviewer</a>.</li>
+										<li>After the Log in is successful you will be redirected to <a
+												href="http://localhost:3000/task">http://localhost:3000/task</a>.</li>
+									</ul>
+									<p><img src="https://user-images.githubusercontent.com/83584866/124597833-92349880-de81-11eb-8d47-6f724627a651.PNG"
+											alt="Image 9" width="1000" height="500"></p>
+									<ul>
+										<li>You can navigate to the Applications tab to <strong>View the Form</strong>
+											submissions.</li>
+									</ul>
+									<p><img src="https://user-images.githubusercontent.com/83584866/124597926-b001fd80-de81-11eb-91ae-08002d5202cb.PNG"
+											alt="Image 10" width="1000" height="500"></p>
+									<ul>
+										<li>You can View the submissions against a form by clicking on the
+											<strong>View</strong> button.
+										</li>
+									</ul>
+									<p><img src="https://user-images.githubusercontent.com/83584866/124598386-2acb1880-de82-11eb-8cb4-fe3249d3de93.PNG"
+											alt="Image 26" width="1000" height="500"></p>
+									<ul>
+										<li>You can print the Form as a PDF.</li>
+									</ul>
+									<p><img src="https://user-images.githubusercontent.com/83584866/124598443-3cacbb80-de82-11eb-8a19-bfe379978864.PNG"
+											alt="Image 6" width="1000" height="500"></p>
+									<ul>
+										<li>On clicking the associated task which was recently created ie. <em>Freedom
+												of
+												Information and Protection of Privacy</em>, the task detailed menu
+											usually
+											has three sections - <strong>Form</strong>, <strong>History</strong>,
+											<strong>Diagram</strong>
+										</li>
+									</ul>
+									<p><img src="https://user-images.githubusercontent.com/83584866/124598608-6f56b400-de82-11eb-9409-dcba892441c8.PNG"
+											alt="Image 15" width="1000" height="500"><br><br>
+										<img src="https://user-images.githubusercontent.com/83584866/124598662-7a114900-de82-11eb-8653-d370bc3aa7c9.PNG"
+											alt="Image 16" width="1000" height="500"><br><br>
+										<img src="https://user-images.githubusercontent.com/83584866/124598701-84cbde00-de82-11eb-9773-c84afbbd812c.PNG"
+											alt="Image 17" width="1000" height="500">
+									</p>
+									<ul>
+										<li>On claiming the task, the Reviewer can fill the form and submit his/her
+											review.
+										</li>
+									</ul>
+									<p><img src="https://user-images.githubusercontent.com/83584866/124598773-9b723500-de82-11eb-8070-5551ae2f1398.PNG"
+											alt="Image 18" width="1000" height="500"><br><br>
+										<img src="https://user-images.githubusercontent.com/83584866/124598911-c3619880-de82-11eb-85a2-f3f5f065ba9c.PNG"
+											alt="Image 19" width="1000" height="500"><br><br>
+										<img src="https://user-images.githubusercontent.com/83584866/124598962-cfe5f100-de82-11eb-8938-4309efd872fb.PNG"
+											alt="Image 20" width="1000" height="500">
+									</p>
+									<ul>
+										<li>On the <strong>Application</strong> section, the form submission history can
+											be
+											found and the form can be viewed.</li>
+									</ul>
+									<p><img src="https://user-images.githubusercontent.com/83584866/124599112-f015b000-de82-11eb-87ff-89ac9fb95d24.PNG"
+											alt="Image 21" width="1000" height="500"><br><br>
+										<img src="https://user-images.githubusercontent.com/83584866/124599317-2a7f4d00-de83-11eb-8bc1-5215bb9add03.PNG"
+											alt="Image 24" width="1000" height="500"><br><br>
+										<img src="https://user-images.githubusercontent.com/83584866/125240030-2a5dd200-e307-11eb-8ed4-ab46fe647534.PNG"
+											alt="Image 68" width="1000" height="500"><br><br>
+										<img src="https://user-images.githubusercontent.com/83584866/124599471-54387400-de83-11eb-8e53-ba9319748d2f.PNG"
+											alt="Image 26" width="1000" height="500">
+									</p>
+									<ul>
+										<li>Reviewer action is completed.</li>
+									</ul>
+									<h2 id="create-new-business-license-application">Create New Business License
+										Application
+									</h2>
+									<blockquote>
+										<p>The following instructions are using an example form from the form.io -
+											<code>Create New Business License Application</code>.
 										</p>
-									</li>
-									<li>
-										<p>On returning, the form application status change from New to Resubmit with an
-											edit option<br><img
-												src="https://user-images.githubusercontent.com/83584866/125245993-db1b9f80-e30e-11eb-9d98-b2ed0f868d27.PNG"
-												alt="Image 23"></p>
-									</li>
-									<li>Log in as a client and resubmit the form, then status change to resubmitted.
-										<img src="https://user-images.githubusercontent.com/83584866/125246415-61d07c80-e30f-11eb-961a-86f0bc76c81a.PNG"
-											alt="Image 36">
-									</li>
-									<li>
-										<p>Log in as a clerk and claim the task. Submit his/her review with feedback.
-											Then the status change to reviewed.
-											<img src="https://user-images.githubusercontent.com/83584866/125248187-6a29b700-e311-11eb-9d99-a9520c1f7c4b.PNG"
-												alt="Image 52">
-										</p>
-									</li>
-									<li>
-										<p>This action is completed, you can now Log out and go to <a
-												href="#approver-steps">Approver Steps</a>.</p>
-									</li>
-								</ul>
-								<h3 id="approver-steps">Approver Steps</h3>
-								<ul>
-									<li>Log in to <a href="http://localhost:3000">http://localhost:3000</a>
-										(forms-flow-web) with valid <a
-											href="./forms-flow-idm/keycloak/README.md#formsflow-ai-user-credentials">default
-											user credentials for Approver</a>.</li>
-									<li>After the Log in is successful you will be redirected to <a
-											href="http://localhost:3000/task">http://localhost:3000/task</a>.</li>
-								</ul>
-								<p><img src="https://user-images.githubusercontent.com/83584866/124575685-3a8a3300-de69-11eb-92dc-267d84c29cb0.PNG"
-										alt="Image 54"></p>
-								<ul>
-									<li>You can navigate to the Applications tab to <strong>View the Form</strong>
-										submissions.</li>
-								</ul>
-								<p><img src="https://user-images.githubusercontent.com/83584866/124575815-57266b00-de69-11eb-8c64-1d9df0e10c87.PNG"
-										alt="Image 55"></p>
-								<ul>
-									<li>You can View the submissions against a form by clicking on the
-										<strong>View</strong> button.
-									</li>
-								</ul>
-								<p><img src="https://user-images.githubusercontent.com/83584866/124575886-6ad1d180-de69-11eb-9665-b535939f5a9b.PNG"
-										alt="Image 56"></p>
-								<ul>
-									<li>You can print the Form submission as a PDF.</li>
-								</ul>
-								<p><img src="https://user-images.githubusercontent.com/83584866/124576102-9e146080-de69-11eb-9157-af43d6a2a245.PNG"
-										alt="Image 57"></p>
-								<p><img src="https://user-images.githubusercontent.com/83584866/124578694-10864000-de6c-11eb-8c90-b644511d9565.PNG"
-										alt="Image 60"></p>
-								<ul>
-									<li>The associated task can be found for the Approver role in the <strong>Task
-											Menu</strong> section</li>
-									<li>On clicking the associated task which was recently created ie. <em>New Business
-											License Application with Two-Step Approval</em>, the task detailed menu
-										usually has three sections - <strong>Forms</strong>, <strong>History</strong>,
-										<strong>Diagram</strong>
-									</li>
-								</ul>
-								<p><img src="https://user-images.githubusercontent.com/83584866/124576463-f2b7db80-de69-11eb-88ca-1927e2418409.PNG"
-										alt="Image 62">
-									<img src="https://user-images.githubusercontent.com/83584866/124576519-02cfbb00-de6a-11eb-8111-8e89236186e3.PNG"
-										alt="Image 63">
-									<img src="https://user-images.githubusercontent.com/83584866/124576585-124f0400-de6a-11eb-98dc-b46b626c2a8c.PNG"
-										alt="Image 64">
-								</p>
-								<ul>
-									<li>
-										<p>On claiming the task, the Approver can fill the form and submit his/her
-											review(approved/rejected/returned) with feedback.
-											<img src="https://user-images.githubusercontent.com/83584866/124576691-2c88e200-de6a-11eb-88ad-f73496b6e265.PNG"
-												alt="Image 65">
-											<img src="https://user-images.githubusercontent.com/83584866/124576734-3874a400-de6a-11eb-8396-13c31986b0f2.PNG"
-												alt="Image 66">
-										</p>
-									</li>
-									<li>
-										<p>This action is completed, New Business License Application is completed its
-											workflow.</p>
-									</li>
-								</ul>
-								<h2 id="links">Links</h2>
-								<ul>
-									<li><a href="https://formsflow.ai/">Web site</a></li>
-									<li><a href="https://youtu.be/_H-P3Av3gqg">Youtube Link</a></li>
-								</ul>
+									</blockquote>
+									<h3 id="designer-steps">Designer Steps</h3>
+									<ul>
+										<li>Log in to <a href="http://localhost:3000">http://localhost:3000</a>
+											(forms-flow-web) with valid <a
+												href="./forms-flow-idm/keycloak/README.md#formsflow-ai-user-credentials">user
+												credentials for the designer</a>.</li>
+										<li>After the Log in is successful you will be redirected to <a
+												href="http://localhost:3000/form">http://localhost:3000/form</a> where
+											you
+											can <code>Create / View / Edit / Delete</code> a form.</li>
+									</ul>
+									<p><img src="https://user-images.githubusercontent.com/83489861/124479964-69020280-ddc4-11eb-9739-18c44a770f76.png"
+											alt="image" width="1000" height="500"></p>
+									<ul>
+										<li>Select the <code>New Business License Application</code> form by clicking on
+											it.
+										</li>
+										<li>You can modify the form by clicking on the <strong>View/Edit Form</strong>
+											button or continue by clicking the <strong>Next</strong> button.</li>
+									</ul>
+									<p><img src="https://user-images.githubusercontent.com/83489861/124480017-76b78800-ddc4-11eb-9b31-e0b2df759656.png"
+											alt="image" width="1000" height="500"></p>
+									<ul>
+										<li>At this stage form designing is completed, you can click on the <strong>EDIT
+												Button</strong> and associate a workflow - Two-Step Approval. </li>
+									</ul>
+									<p><img src="https://user-images.githubusercontent.com/83489861/124480123-9058cf80-ddc4-11eb-802c-b69bfc796685.png"
+											alt="image" width="1000" height="500"></p>
+									<ul>
+										<li>After the associate workflow is completed click on the <strong>Next
+												Button</strong> to Preview and Confirm.</li>
+										<li>You can click on the <strong>EDIT Button</strong> and publish the form for
+											clients.</li>
+									</ul>
+									<p><img src="https://user-images.githubusercontent.com/83489861/124480173-9ea6eb80-ddc4-11eb-9b51-cf7c1ebbdb90.png"
+											alt="image" width="1000" height="500"></p>
+									<ul>
+										<li>Click on <strong>SAVE Button</strong> to completed designing a form.</li>
+										<li>Form designing is successfully completed, you can now Log out and go to <a
+												href="#client---steps">Client Steps</a></li>
+									</ul>
+									<h3 id="client-steps">Client Steps</h3>
+									<ul>
+										<li>Log in to <a href="http://localhost:3000">http://localhost:3000</a>
+											(forms-flow-web) with valid <a
+												href="./forms-flow-idm/keycloak/README.md#formsflow-ai-user-credentials">default
+												user credentials for the client</a>.</li>
+										<li>After the Log in is successful you will be redirected to <a
+												href="http://localhost:3000/form">http://localhost:3000/form</a> where
+											you
+											can View and Submit a form.</li>
+									</ul>
+									<p><img src="https://user-images.githubusercontent.com/83489861/124480279-b9796000-ddc4-11eb-83c5-894f8b5ea223.png"
+											alt="image" width="1000" height="500"></p>
+									<ul>
+										<li>Click <strong>Submit New Button</strong> on the form which you wanted to
+											submit.
+										</li>
+										<li>The previous action will redirect you to the form, where you can fill in the
+											details and Submit them.</li>
+									</ul>
+									<p><img src="https://user-images.githubusercontent.com/83584866/124552424-276b6900-de51-11eb-8e15-db699c944040.PNG"
+											alt="Image 2" width="1000" height="500"></p>
+									<ul>
+										<li>
+											<p>Fill in the details and Submit the form, You can repeat this action as
+												per
+												your requirement.</p>
+											<p><img src="https://user-images.githubusercontent.com/83584866/124552756-9052e100-de51-11eb-9c92-64f61ee1fa3a.png"
+													alt="Image 3" width="1000" height="500"></p>
+										</li>
+										<li>If you had associated a workflow with the form, the form will start the
+											workflow.</li>
+										<li>This action is completed, you can now Log out and go to <a
+												href="#clerk-steps">Clerk Steps</a>.</li>
+									</ul>
+									<h3 id="clerk-steps">Clerk Steps</h3>
+									<ul>
+										<li>Log in to <a href="http://localhost:3000">http://localhost:3000</a>
+											(forms-flow-web) with valid <a
+												href="./forms-flow-idm/keycloak/README.md#formsflow-ai-user-credentials">default
+												user credentials for Clerk</a>.</li>
+										<li>After the Log in is successful you will be redirected to <a
+												href="http://localhost:3000/task">http://localhost:3000/task</a>.</li>
+									</ul>
+									<p><img src="https://user-images.githubusercontent.com/83584866/124553139-ffc8d080-de51-11eb-9476-46b925821b12.PNG"
+											alt="Image 10" width="1000" height="500"></p>
+									<ul>
+										<li>You can navigate to the Applications tab to <strong>View the Form</strong>
+											submissions.</li>
+									</ul>
+									<p><img src="https://user-images.githubusercontent.com/83584866/124565163-5be62180-de5f-11eb-8115-680d3e4fe8cc.PNG"
+											alt="Image 12" width="1000" height="500"></p>
+									<ul>
+										<li>You can View the submissions against a form by clicking on the
+											<strong>View</strong> button.
+										</li>
+									</ul>
+									<p><img src="https://user-images.githubusercontent.com/83584866/124565303-8506b200-de5f-11eb-889b-3710d08d62fa.PNG"
+											alt="Image 17" width="1000" height="500"></p>
+									<ul>
+										<li>You can print the Form submission as a PDF.</li>
+									</ul>
+									<p><img src="https://user-images.githubusercontent.com/83584866/124565427-a6679e00-de5f-11eb-9fe4-266ba57ad0c3.PNG"
+											alt="Image 7" width="1000" height="500"></p><br><br>
+									<p><img src="https://user-images.githubusercontent.com/83584866/124578912-46c3bf80-de6c-11eb-9bc4-03f24150a31d.PNG"
+											alt="Image 42" width="1000" height="500"></p>
+									<ul>
+										<li>The associated task can be found for the Clerk role in the <strong>Task
+												Menu</strong> section</li>
+										<li>
+											<p>On clicking the associated task which was recently created ie. <em>New
+													Business License Application with Two-Step Approval</em>, the task
+												detailed menu usually has three sections - <strong>Form</strong>,
+												<strong>History</strong>, <strong>Diagram</strong><br><br>
+												<img src="https://user-images.githubusercontent.com/83584866/124566028-4a514980-de60-11eb-9eda-890aa7bf32f5.PNG"
+													alt="Image 18" width="1000" height="500"><br><br>
+												<img src="https://user-images.githubusercontent.com/83584866/124566338-94d2c600-de60-11eb-8d17-552bbd2c766f.PNG"
+													alt="Image 19" width="1000" height="500"><br><br>
+												<img src="https://user-images.githubusercontent.com/83584866/124566434-aa47f000-de60-11eb-964d-195d06d8a9eb.PNG"
+													alt="Image 20" width="1000" height="500">
+											</p>
+										</li>
+										<li>
+											<p>On claiming the task, the Clerk can fill the form and submit his/her
+												review
+												with feedback.</p>
+										</li>
+										<li>
+											<p>Return option will send the form back to the client for edit and
+												resubmission.<br><br>
+												<img src="https://user-images.githubusercontent.com/83584866/124566523-c0ee4700-de60-11eb-8d27-7b46f0a856e7.PNG"
+													alt="Image 21" width="1000" height="500"><br><br>
+												<img src="https://user-images.githubusercontent.com/83584866/125240658-03ec6680-e308-11eb-9655-153817406389.PNG"
+													alt="Image 22" width="1000" height="500">
+											</p>
+										</li>
+										<li>
+											<p>On returning, the form application status change from New to Resubmit
+												with an
+												edit option<br><br><img
+													src="https://user-images.githubusercontent.com/83584866/125245993-db1b9f80-e30e-11eb-9d98-b2ed0f868d27.PNG"
+													alt="Image 23" width="1000" height="500"></p>
+										</li>
+										<li>Log in as a client and resubmit the form, then status change to
+											resubmitted.<br><br>
+											<img src="https://user-images.githubusercontent.com/83584866/125246415-61d07c80-e30f-11eb-961a-86f0bc76c81a.PNG"
+												alt="Image 36" width="1000" height="500">
+										</li>
+										<li>
+											<p>Log in as a clerk and claim the task. Submit his/her review with
+												feedback.
+												Then the status change to reviewed.<br><br>
+												<img src="https://user-images.githubusercontent.com/83584866/125248187-6a29b700-e311-11eb-9d99-a9520c1f7c4b.PNG"
+													alt="Image 52" width="1000" height="500">
+											</p>
+										</li>
+										<li>
+											<p>This action is completed, you can now Log out and go to <a
+													href="#approver-steps">Approver Steps</a>.</p>
+										</li>
+									</ul>
+									<h3 id="approver-steps">Approver Steps</h3>
+									<ul>
+										<li>Log in to <a href="http://localhost:3000">http://localhost:3000</a>
+											(forms-flow-web) with valid <a
+												href="./forms-flow-idm/keycloak/README.md#formsflow-ai-user-credentials">default
+												user credentials for Approver</a>.</li>
+										<li>After the Log in is successful you will be redirected to <a
+												href="http://localhost:3000/task">http://localhost:3000/task</a>.</li>
+									</ul>
+									<p><img src="https://user-images.githubusercontent.com/83584866/124575685-3a8a3300-de69-11eb-92dc-267d84c29cb0.PNG"
+											alt="Image 54" width="1000" height="500"></p>
+									<ul>
+										<li>You can navigate to the Applications tab to <strong>View the Form</strong>
+											submissions.</li>
+									</ul>
+									<p><img src="https://user-images.githubusercontent.com/83584866/124575815-57266b00-de69-11eb-8c64-1d9df0e10c87.PNG"
+											alt="Image 55" width="1000" height="500"></p>
+									<ul>
+										<li>You can View the submissions against a form by clicking on the
+											<strong>View</strong> button.
+										</li>
+									</ul>
+									<p><img src="https://user-images.githubusercontent.com/83584866/124575886-6ad1d180-de69-11eb-9665-b535939f5a9b.PNG"
+											alt="Image 56" width="1000" height="500"></p>
+									<ul>
+										<li>You can print the Form submission as a PDF.</li>
+									</ul>
+									<p><img src="https://user-images.githubusercontent.com/83584866/124576102-9e146080-de69-11eb-9157-af43d6a2a245.PNG"
+											alt="Image 57" width="1000" height="500"></p><br><br>
+									<p><img src="https://user-images.githubusercontent.com/83584866/124578694-10864000-de6c-11eb-8c90-b644511d9565.PNG"
+											alt="Image 60" width="1000" height="500"></p>
+									<ul>
+										<li>The associated task can be found for the Approver role in the <strong>Task
+												Menu</strong> section</li>
+										<li>On clicking the associated task which was recently created ie. <em>New
+												Business
+												License Application with Two-Step Approval</em>, the task detailed menu
+											usually has three sections - <strong>Forms</strong>,
+											<strong>History</strong>,
+											<strong>Diagram</strong>
+										</li>
+									</ul>
+									<p><img src="https://user-images.githubusercontent.com/83584866/124576463-f2b7db80-de69-11eb-88ca-1927e2418409.PNG"
+											alt="Image 62" width="1000" height="500"><br><br>
+										<img src="https://user-images.githubusercontent.com/83584866/124576519-02cfbb00-de6a-11eb-8111-8e89236186e3.PNG"
+											alt="Image 63" width="1000" height="500"><br><br>
+										<img src="https://user-images.githubusercontent.com/83584866/124576585-124f0400-de6a-11eb-98dc-b46b626c2a8c.PNG"
+											alt="Image 64" width="1000" height="500">
+									</p>
+									<ul>
+										<li>
+											<p>On claiming the task, the Approver can fill the form and submit his/her
+												review(approved/rejected/returned) with feedback.
+												<img src="https://user-images.githubusercontent.com/83584866/124576691-2c88e200-de6a-11eb-88ad-f73496b6e265.PNG"
+													alt="Image 65" width="1000" height="500"><br><br>
+												<img src="https://user-images.githubusercontent.com/83584866/124576734-3874a400-de6a-11eb-8396-13c31986b0f2.PNG"
+													alt="Image 66" width="1000" height="500">
+											</p>
+										</li>
+										<li>
+											<p>This action is completed, New Business License Application is completed
+												its
+												workflow.</p>
+										</li>
+									</ul>
+									<h2 id="links">Links</h2>
+									<ul>
+										<li><a href="https://formsflow.ai/">Web site</a></li>
+										<li><a href="https://youtu.be/_H-P3Av3gqg">Youtube Link</a></li>
+									</ul>
 
 
 
 
-							</div>
+								</div>
 
 
 
 
-						</section>
-						<!--//docs-intro-->
+							</section>
+							<!--//docs-intro-->
 
-						<!-- <h5>Github Code Example:</h5>
+							<!-- <h5>Github Code Example:</h5>
 						<p>You can <a class="theme-link" href="https://gist.github.com/" target="_blank">embed your code
 								snippets using Github gists</a></p> -->
-						<div class="docs-code-block">
-							<!-- ** Embed github code starts ** -->
-							<!-- <script
+							<div class="docs-code-block">
+								<!-- ** Embed github code starts ** -->
+								<!-- <script
 								src="https://github.com/AOT-Technologies/forms-flow-ai/blob/master/README.md"></script>
 							<!-- ** Embed github code ends ** -->
-							<!-- <a href="">clickhere</a> -->
-						</div>
-						<!--//docs-code-block-->
+								<!-- <a href="">clickhere</a> -->
+							</div>
+							<!--//docs-code-block-->
 
-						<!-- <h5>Highlight.js Example:</h5>
+							<!-- <h5>Highlight.js Example:</h5>
 						<p>You can <a class="theme-link" href="https://github.com/highlightjs/highlight.js"
 								target="_blank">embed your code snippets using highlight.js</a> It supports <a
 								class="theme-link" href="https://highlightjs.org/static/demo/" target="_blank">185
@@ -681,7 +853,7 @@
 								target="_blank">Atom One Dark</a> style for the code blocks:
 							<br><code>&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css&#x22;&#x3E;</code>
 						</p> -->
-						<!-- <div class="docs-code-block">
+							<!-- <div class="docs-code-block">
 							<pre class="shadow-lg rounded"><code class="json hljs">[
   {
     <span class="hljs-attr">"title"</span>: <span class="hljs-string">"apples"</span>,
@@ -698,66 +870,13 @@
 
 </code></pre>
 						</div> -->
-						<!--//docs-code-block-->
+							<!--//docs-code-block-->
 
 
 					</header>
 					<!-- main heading content end -->
 					<!-- sub heading content -->
-					<section class="docs-section" id="item-1-1">
-						<h2 class="section-heading">About the Project</h2>
-						<p>Use cases of formsflow are:</p>
-						<ul>
-							<li>Applications for licenses</li>
-							<li>Public submissions</li>
-							<li>FOI requests</li>
-							<li>Applications for funding</li>
-							<li>Statements of compliance</li>
-							<li>Employee onboarding</li>
-							<li>Performance Reviews</li>
-							<li>Emergency processes</li>
-							<li>Escalations</li>
-							<li>Surveys</li>
-							<li>
-								<p>Case Management</p>
-								<h3 id="features">Features</h3>
-							</li>
-							<li>
-								<p>Drag-and-drop forms-builder with rich UI components</p>
-							</li>
-							<li>Lightweight server-based workflow engine with full capabilities including human,
-								parallel, asynchronous and timed flows, decision engine, and graphical designer</li>
-							<li>Notifications engine for notifications, reminders, and alerts on tasks and even data
-								thresholds.</li>
-							<li>Metrics and data visualization dashboards for the display of key workflow and form
-								data</li>
-							<li>Multi-tenancy isolation</li>
-							<li>Containerized deployment with docker, docker-compose, and Openshift</li>
-							<li>Flexible Identity Management uses existing IDM systems for authentication and single
-								sign-on</li>
-
-							<li>Low Code Open Source Form Builder</li>
-							<li>Decision Engine</li>
-							<li>Custom Dashboards</li>
-							<li>Flexible IDM Systems</li>
-							<li>No License Fees</li>
-							<li>Rich UI Components</li>
-							<li>Notifications Engine</li>
-							<li>React Web UI</li>
-							<li>Quick Start</li>
-							<li>Lightweight Workflow Engine</li>
-							<li>Form Metrics</li>
-							<li>Task Alerts</li>
-							<li>Vue.js Web UI</li>
-							<li>Professional Support</li>
-							<li>Public or Private Cloud</li>
-							<li>Submission Insights</li>
-							<li>Fully Containerized</li>
-							<li>Secure User Roles</li>
-							<li>Regular Updates</li>
-						</ul>
-
-						</p>
+					<section>
 						<h5>Callout Examples:</h5>
 						<div class="callout-block callout-block-info">
 
@@ -909,10 +1028,7 @@
 				<header class="docs-header">
 					<h1 class="docs-heading">Installation</h1>
 					<section class="docs-intro">
-						<p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-							finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit.
-							Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam
-							lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+						<p>You can find step-by-step instructions to download and install here.</p>
 					</section>
 					<!--//docs-intro-->
 				</header>
@@ -972,7 +1088,7 @@
 							<li>Run batch file on command prompt as adminstartor </li>
 						</ul>
 					</div> -->
-						<div>
+						<!-- <div>
 							<h5>testing List Examples:</h5>
 							<ul>
 								<li> Web</strong> <a href="">http://localhost:3000</a></li>
@@ -981,14 +1097,15 @@
 
 							</ul>
 
-						</div>
+						</div> -->
 				</section>
 				<!--//section-->
 
 				<section class="docs-section" id="installation-2">
 					<p>In the following document, we’ll describe about the different project dependencies, and the
 						installation options being supported.</p>
-					<h2 id="table-of-contents">Table of Contents</h2>
+					<h2>Download and Installation</h2><br>
+					<h3 id="table-of-contents">Table of Contents</h3>
 					<ol>
 						<li><a href="#prerequisites">Prerequisites</a></li>
 						<li><a href="#download-the-formsflowai">Download the formsflow.ai</a></li>
@@ -1020,7 +1137,7 @@
 								href="https://github.com/AOT-Technologies/forms-flow-ai">https://github.com/AOT-Technologies/forms-flow-ai</a>
 						</li>
 						<li>If deploying to a remote server, you can use nginx as a reverse proxy and SSL engine. To
-							help you, follow the instructions in the nginx <a href="./server/nginx/README.md">README</a>
+							help you, follow the instructions in the nginx <a href="#installation-1">README</a>
 						</li>
 					</ul>
 					<h2 id="installation">Installation</h2>
@@ -1045,16 +1162,18 @@
 					<p>Download the compressed <a
 							href="https://github.com/AOT-Technologies/forms-flow-ai/blob/master/deployment/docker/bundle/bundle.zip">bundle</a>
 						and follow
-						the instructions from <a
-							href="https://github.com/athira-aot/athira-aot.github.io/blob/main/Quick%20Installation.md">readme</a>.
+						the instructions from <a href="#installation-1">readme</a>.
 					</p>
 					<h4 id="docker-full-deployment">Docker Full Deployment</h4>
-					<p>Follow the instructions on <a href="./docker">docker installation guide</a></p>
+					<p>Follow the instructions on <a href="#dockerinstallation">Docker installation guide</a></p>
+					<H2><A name="dockerinstallation">docker installation guide</A></H2>
+
 					<h4 id="docker-individual-service-deployment">Docker Individual Service Deployment</h4>
 					<p>Install the components in the listed order. <em>(NOTE: Keycloak, form.io and redash
 							dependencies are used on other components)</em></p>
 					<ul>
-						<li><a href="../forms-flow-idm/keycloak">Keycloak</a> Identity keycloak components</li>
+						<li><a href="#keycloak">Keycloak</a> Identity keycloak components</li>
+
 						<li><a href="../forms-flow-forms">forms-flow-forms</a> formsflow.ai integration with form.io
 						</li>
 						<li><a href="../forms-flow-analytics">forms-flow-analytics</a> Redash analytics components
@@ -1075,42 +1194,115 @@
 
 
 
+
+				<section>
+					<h2 id="verifying-the-installation-status">Verifying the Installation status</h2>
+					<blockquote>
+						<p>The following applications will be started and can be accessed in your browser.</p>
+					</blockquote>
+					<table border="2">
+
+						<tr>
+							<th>Srl No</th>
+							<th>Service Name</th>
+							<th>Usage</th>
+							<th>Access</th>
+							<th>Default credentials (userName / Password)</th>
+						</tr>
+
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td><code>Keycloak</code></td>
+								<td>Authentication</td>
+								<td><code>http://localhost:8080</code></td>
+								<td><code>admin/changeme</code></td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td><code>forms-flow-forms</code></td>
+								<td>form.io form building. This must be started earlier for resource role id&#39;s
+									creation</td>
+								<td><code>http://localhost:3001</code></td>
+								<td><code>admin@example.com/changeme</code></td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td><code>forms-flow-analytics</code></td>
+								<td>Redash analytics server, This must be started earlier for redash key creation</td>
+								<td><code>http://localhost:7000</code></td>
+								<td>Use the credentials used for registration / <a
+										href="https://github.com/athira-aot/athira-aot.github.io/blob/main/Access%20credentials.md">Default
+										user credentials</a></td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td><code>forms-flow-web</code></td>
+								<td>formsflow Landing web app</td>
+								<td><code>http://localhost:3000</code></td>
+								<td><a
+										href="https://github.com/athira-aot/athira-aot.github.io/blob/main/Access%20credentials.md">Default
+										user credentials</a></td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td><code>forms-flow-api</code></td>
+								<td>API services</td>
+								<td><code>http://localhost:5000</code></td>
+								<td><code>Authorization tocken from keycloak role based user credentials</code></td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td><code>forms-flow-bpm</code></td>
+								<td>Camunda integration</td>
+								<td><code>http://localhost:8000/camunda</code></td>
+								<td><a
+										href="https://github.com/athira-aot/athira-aot.github.io/blob/main/Access%20credentials.md">Default
+										user credentials</a> </td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+
+
 				<section>
 					<div>
 						<h1>Internationalization</h1>
-						<h4>Localization</h4>
+
 						<p>This feature enable the user to add new language according to their preference. Currently we
-							are providing you with five languages :
+							are providing you with six languages :
 						<ol>
 							<li>English</li>
 							<li>Chinese</li>
 							<li>Portuguese</li>
 							<li>French</li>
 							<li>Bulgarian</li>
+							<li>German</li>
 
 						</ol>
 						</P>
 						<h4>To add a new language</h4>
 						<ul>
-							<li>Select 'translations' folder from forms-flow-web/src</li>
+							<li>Select 'resourceBundles' folder from forms-flow-web/src</li>
 							<li>Create a folder structure as shown below</li>
 							<li>Folder name should be the abbreviation of the required language (example : Bulgarian- bg
 								)</li>
-							<li>Create a file named translations.js inside the folder</li>
+							<li>Create a file named resourceBundles.js inside the folder</li>
 							<img src="./assets/images/image.png">
-							<li>Now open folder 'en' from the same folder 'translations'</li>
-							<li>Copy the content of en/translations.js and paste it to the newly created file
+							<li>Now open folder 'en' from the same folder 'resourceBundles'</li>
+							<li>Copy the content of en/resourceBundles.js and paste it to the newly created file
 							</li>
-							<img src="./assets/images/image (1).png">
+							<img src="./assets/images/image (1).png" width="1000" height="500">
 
 							<li>Change 'EN' to 'BG'</li>
-							<li>Copy each value from the key: "value" and translate the same using google
+							<li>Copy each value from the "key": "value" and translate the same using google
 								translator to the required language </li>
 							<li>Paste the the translated language to the file</li>
-							<img src="./assets/images/image (2).png">
-							<li>At 'translations/i18n.js' make the required changes as shown below for
+							<img src="./assets/images/image (2).png" width="1000" height="500"><br><br>
+							<li>At 'resourceBundles/i18n.js' make the required changes as shown below for
 								'bg' : </li>
-							<img src="./assets/images/image (3).png">
+							<img src="./assets/images/image (3).png" width="1000" height="500"><br><br>
 						</ul>
 						<h4>Add to dropdown</h4>
 						<p>To add the new language to drop down option :</p>
@@ -1118,11 +1310,13 @@
 							<li>Open forms-flow-web/src/containers/NavBar.jsx </li>
 							<li>Translate the name of the language using google translater and make the changes in the
 								file as shown below </li>
-							<img src="./assets/images/image (4).png">
-							<li>Now you can select your prefered language from the dropdown</li>
+							<img src="./assets/images/image (4).png" width="1000" height="500">
+							<li>Open <a href="http://localhost:3000 ">http://localhost:3000 </a>to see the changes.</li>
 							<img src="./assets/images/image (5).png">
+							<li>Internationalization is now done.</li>
 
 						</ul>
+
 
 					</div>
 				</section>
@@ -1143,7 +1337,7 @@
 					</ol>
 					<p>Note- forms that are made anonymous and public will only appear publicly.
 						<img src="https://user-images.githubusercontent.com/86649870/166641457-2cfd059f-26f4-4eed-bcd5-3737d5516049.png"
-							alt="image">
+							alt="image" width="1000" height="500">
 					</p>
 
 				</section>
