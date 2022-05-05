@@ -82,7 +82,7 @@
 								class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Getting
 							started</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Introduction</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Download</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">system Architecture</a></li>
 					<!-- main heading -->
 					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span
 								class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Installation</a>
@@ -150,12 +150,12 @@
 							<br>
 							<section>
 								<div>
-									<h1 id="system-architecture">System Architecture</h1>
+									<h2 id="item-1-2">System Architecture</h2><br><br>
 									<img src="./assets/images/formsflow-ai-components.png" alt="image" width="700"
 										height="500"><br><br>
-									<h2 id="components">Components</h2>
+									<h3 id="components">Components</h3>
 									<p>The components of the system are:</p>
-									<h3 id="formsflow-ui">formsflow UI</h3>
+									<h4 id="formsflow-ui">formsflow UI</h4>
 									<p>Browser-based React integration web UI Most of the day-to-day end-user and review
 										tasks are performed from this application, built specifically to act as a common
 										UI combining forms, workflow, and analytics functionality. The web application
@@ -164,8 +164,8 @@
 										app with the potential for offline data-entry. formsflow UI accesses the
 										individual system component data through native API&#39;s using OIDC or SAML
 										access tokens.</p>
-									<h3 id="formsflow-ui-extension-for-vue-js-optional-">formsflow UI Extension for
-										Vue.js (optional)</h3>
+									<h4 id="formsflow-ui-extension-for-vue-js-optional-">formsflow UI Extension for
+										Vue.js (optional)</h4>
 									<p>There is a Vue.js based web user interface for easy integration of formsflow.ai
 										to your existing User Interface. This extension provides components for easily
 										using Forms, Tasklist by installing as a npm package. To know more details
@@ -174,26 +174,26 @@
 											repository</a>and to install package <a
 											href="https://www.npmjs.com/package/camunda-formio-tasklist-vue">go
 											here.</a></p>
-									<h3 id="redash-admin-ui">Redash Admin UI</h3>
+									<h4 id="redash-admin-ui">Redash Admin UI</h4>
 									<p>The native admin interface to Redash (bundled and unchanged). Use this to build
 										analytics dashboards.</p>
-									<h3 id="redash-api">Redash API</h3>
+									<h4 id="redash-api">Redash API</h4>
 									<p>The REST interface to the Redash core. Bundled and unchanged</p>
-									<h3 id="form-io-api">Form.io API</h3>
+									<h4 id="form-io-api">Form.io API</h4>
 									<p>The REST interface to the form.io core</p>
-									<h3 id="camunda-admin-ui">Camunda Admin UI</h3>
+									<h4 id="camunda-admin-ui">Camunda Admin UI</h4>
 									<p>The native admin interface to Camunda (bundled and unchanged) . Use this to
 										define workflows and to manage workflow tasks as an admin.</p>
-									<h3 id="rest-api">REST API</h3>
+									<h4 id="rest-api">REST API</h4>
 									<p>Python REST API providing business logic around the internal formsflow.ai
 										Postgres database. This API is used extensively by the formsflow.ai UI to
 										synchronize, maintain state, extend functionality, and integrate between
 										components.</p>
-									<h3 id="nginx-web-server-optional-">Nginx Web server (optional)</h3>
+									<h4 id="nginx-web-server-optional-">Nginx Web server (optional)</h4>
 									<p>Webserver providing reverse-proxy redirection and SSL to components for remote
 										deployments. ( bundled and configured )</p>
-									<h3 id="keycloak-identity-management-server">Keycloak Identity management server
-									</h3>
+									<h4 id="keycloak-identity-management-server">Keycloak Identity management server
+									</h4>
 									<p>The system uses an existing (your) Keycloak server which provides a common
 										identity management capability. The system provides default installation and
 										provisioning of the Keycloak server for local setup, steps are mentioned <a
@@ -1191,9 +1191,111 @@
 							installation guide</a></p>
 
 				</section>
+				<section>
+					<div>
+						<h3 id="Openshift-Full-Deployment">formsflow.ai - Openshift Setup</h3>
+						<p>This page details elaborates about deploying overall in openshift. All the applicaiton are
+							deployed using openshift templates.</p>
+						<p><em>The templates are tested , ran and customised for running in BCGOV pathfinder OCP3 and
+								Openshift 4 silver cluster , there could be particular places where the templates are
+								opinionated. Feel free to alter them and generalise them for any kubernetes/openshift
+								deployments</em></p>
+						<p>Every component has a build config [bc], Deployment config and might have a param file. The
+							general syntax for running them is</p>
+						<p><code>oc process -f web_dc.yaml --param-file=web_param.yaml |oc apply -f - --ignoreunknownparams</code>
+						</p>
+						<p>an ideal topology will look like</p>
+						<p><img src="forms-flow-topology.png" alt="" title="Deployment Topology"></p>
+						<p>Databases</p>
+						<h2 id="databases">Databases</h2>
+						<p>The application uses Postgres and Mongo DB for persistence.The below templates can be used as
+							a reference to spin up new databases.Alternatively new databse schema can be created with in
+							the existing database.</p>
+						<h3 id="how-to-deploy-postgres">how to deploy postgres</h3>
+						<p>Postgres HA and Non-HA templates can be used.</p>
+						<p>A sample patroni templates can be found at <a
+								href="../openshift/Databases/patroni-build.yaml">patroni-build.yaml</a> , <a
+								href="../openshift/Databases/patroni-build.yaml">patroni-build.yaml</a> , <a
+								href="../openshift/Databases/patroni-deployment.yaml">patroni-deployment.yaml</a> , <a
+								href="../openshift/Databases/patroni-deployment-prereq.yaml">patroni-deployment-prereq.yaml</a>
+						</p>
+						<p>To avail the latest patroni templates ,Please refer to <a
+								href="https://github.com/BCDevOps/platform-services/tree/master/apps/pgsql/patroni">BCDevOps/platform-services/patroni
+								templates</a></p>
+						<p>A sample non-Ha template is checked in here at <a
+								href="../openshift/Databases/postgresql-deploy.json">postgres-non-ha template</a></p>
+						<h3 id="how-to-deploy-mongo">how to deploy Mongo</h3>
+						<p>Mongo HA and Non-HA templates can be used.</p>
+						<p>A sample Mongo HA template can be found at <a
+								href="../openshift/Databases/mongo-ha.yaml">mongo-ha.yaml</a>
+							A sample Mongo non-HA templates can be found at <a
+								href="../openshift/Databases/mongodb-nonha.yaml">mongodb-nonha.yaml</a></p>
+						<h3 id="secrets-and-config-maps">Secrets and Config maps</h3>
+						<h3 id="secrets">secrets</h3>
+						<p>The forms-flow-ai secret contain most of the values which are mandatory for application to
+							work.</p>
+						<p>running the <a href="../openshift/formio_secrets.yaml">formio_secrets_param.yaml</a> with
+							proper values should create the required secret.</p>
+						<p>There are other secrets which are needed as well. They are mostly Mongo , Postgres,Redash
+							secrets as in the below screenshot</p>
+						<p><img src="secrets.png" alt="" title="Secrets"></p>
+						<h3 id="config-maps">config maps</h3>
+						<p>the two major config which are required to run the application is the forms-flow-web-config
+							and forms-flow-web-keycloak-config.
+							forms-flow-web-config contains the ids and urls required for web project to work.
+							forms-flow-web-keycloak-config has the keycloak configs.</p>
+						<p><img src="config-maps.png" alt="" title="Config maps"></p>
+						<h3 id="build-configs-images">Build Configs/Images</h3>
+						<p>Each project needs a build configuration and images/image stream to work with.An ideal build
+							config will look like below.</p>
+						<p><img src="bc.png" alt="" title="Build Config"></p>
+						<h3 id="deployment-configs">Deployment Configs</h3>
+						<p>An example deployment config will look like below</p>
+						<p><img src="dc.png" alt="" title="Deployment Config"></p>
+						<p><a href="../../forms-flow-web/Dockerfile">Dockerfile</a>
+							<a href="/forms-flow-web/openshift_Dockerfile">openshift_Dockerfile</a>
+							<a href="/forms-flow-web/openshift_custom_Dockerfile">openshift_custom_Dockerfile</a>
+						</p>
+						<h2 id="docker-files">Docker files</h2>
+						<p>the project has different deployment topoloiges and there are different docker files for each
+							purpose as below</p>
+						<table border="1">
+							<thead>
+								<tr>
+									<th>filename</th>
+									<th style="text-align:center">sample reference</th>
+									<th style="text-align:right">Purpose</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Dockerfile</td>
+									<td style="text-align:center"><a
+											href="../../forms-flow-web/Dockerfile">Dockerfile</a></td>
+									<td style="text-align:right">Dockerfile to support docker compose</td>
+								</tr>
+								<tr>
+									<td>openshift_Dockerfile</td>
+									<td style="text-align:center"><a
+											href="../../forms-flow-web/openshift_Dockerfile">openshift_Dockerfile</a>
+									</td>
+									<td style="text-align:right">Openshift based deployment</td>
+								</tr>
+								<tr>
+									<td>openshift_custom_Dockerfile</td>
+									<td style="text-align:center"><a
+											href="../../forms-flow-web/openshift_custom_Dockerfile">openshift_custom_Dockerfile</a>
+									</td>
+									<td style="text-align:right">To allow customisation and build from this repo.Helps
+										to copy stuff from the buidling repo and merge to the product.</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
 
 
-
+				<br><br>
 
 				<section>
 					<h2 id="verifying-the-installation-status">Verifying the Installation status</h2>
@@ -1264,7 +1366,7 @@
 					</table>
 				</section>
 
-
+				<br><br>
 
 				<section>
 					<div>
