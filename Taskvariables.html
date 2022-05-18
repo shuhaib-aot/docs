@@ -129,75 +129,47 @@
 
 
                         <br>
-                        <section class="docs-section" id="installation-1">
-                            <h2 class="section-heading">Quick Installation</h2>
-                            <hr>
-
+                        <section>
                             <div>
-                                <h5>Formsflow.ai Single click installation</h5>
-
-                                <ul>
-                                    <li>Download batch file <a href="">Windows</a> <a href="">Linux</a></li>
-                                </ul>
-
-                                <p>This is a distribution of formsflow.ai latest release.
-                                     </p>
-                                <h5 id="table-of-contents">Table of Contents</h5>
+                                <h2 id="taskvariables">Task variable workflow</h2>
+                                <hr><br>
                                 <ol>
-                                    <li><a href="#summary">Summary</a></li>
-                                    <li><a href="#dependency">Dependencies</a></li>
-                                    <li><a href="#installation">installation</a></li>
+                                    <li>Create a new form or Edit an already created form.</li><br>
+                                    <img src="./assets/images/Screenshot 2022-05-12 160427.png" width="1000"
+                                        height="500"><br><br>
+                                    <li>Associate the form with the workflow. </li><br>
+                                    <img src="./assets/images/Screenshot 2022-05-12 160526.png" width="1000"
+                                        height="500"><br><br>
+                                    <li>Ensure the workflow has included FormBPMFilteredDataPipelineListener. </li><br>
+                                    <img src="./assets/images/Screenshot 2022-05-12 165140.png" width="1000"
+                                        height="500"><br><br>
+                                    <li>Add task filter variables to the form. The FormBPMFilteredDataPipelineListener
+                                        copies
+                                        the added task variable keys from form(formio) to camunda variables..</li><br>
+                                    <img src="./assets/images/Screenshot 2022-05-12 161159.png" width="1000"
+                                        height="500"><br><br>
+                                    <strong>Note:</strong> As of now only key is used, Label and Show in list are
+                                    included for
+                                    future purpose.<br>
+                                    <li>Click the add button, the selected key is added as a task variable. We can add
+                                        more
+                                        variables from the form as task variables and also edit the task variable
+                                        already added.
+                                    </li><br>
+                                    <img src="./assets/images/Screenshot 2022-05-12 162111.png" width="1000"
+                                        height="500"><br><br>
+                                    <li>Submit new application with this form</li><br>
+                                    <img src="./assets/images/Screenshot 2022-05-12 162340.png" width="1000"
+                                        height="500"><br><br>
+                                    <li> Add the task variables to edit filter in camunda tasklist</li><br>
+                                    <img src="./assets/images/Screenshot 2022-05-12 162652.png" width="1000"
+                                        height="500"><br><br>
+                                    <li>Now these variables are displayed in users tasklist</li><br>
+                                    <img src="./assets/images/Screenshot 2022-05-12 162839.png" width="1000"
+                                        height="500"><br><br>
+
                                 </ol>
-                                <h4 id="summary">Summary</h4>
-                                <p>The root directory contains the install script for windows. After executing it, you
-                                    can
-                                    access the web applications by following the link from <a
-                                        href="../../#verifying-the-installation-status">here</a></p>
-                                <h4 id="dependency">Dependencies</h4>
-                                <ol>
-                                    <div>
-                                        <ul>
-                                            <li><a href="https://docs.docker.com/engine/install/">Docker</a></li>
-                                            <li><a href="https://git-scm.com/">Git</a></li>
-                                        </ul>
-                                    </div>
-                                </ol>
-                                <h4 id="installation">Installation</h4>
-                                <code>This setup is not recommended for production use.</code>
-
-                                <ul>
-                                    <li>In the base directory execute install script by double clicking on the
-                                        install.bat
-                                        (For Windows).</li>
-                                    <li>The following image depicts the installation flow with user input required for
-                                        configuration.</li>
-                                </ul>
-                                <p><img src="https://user-images.githubusercontent.com/94040192/160104985-35e13a88-1384-48e7-8701-87ac9fc66cb1.jpg"
-                                        alt="Drawing (3)"></p>
-
-
-
-
-
-
-                                <!-- <h4>Step 2</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempora quos iusto
-                                    architecto excepturi. Maxime cum provident molestiae! Deserunt obcaecati est maxime.
-                                    Modi aut, sint hic quia perspiciatis dolor laboriosam?</p>
-                                <ul>
-                                    <li>Run batch file on command prompt as adminstartor </li>
-                                </ul>
-                            </div> -->
-                                <!-- <div>
-                                    <h5>testing List Examples:</h5>
-                                    <ul>
-                                        <li> Web</strong> <a href="">http://localhost:3000</a></li>
-                                        <li> Web</strong> <a href="">http://localhost:3000</a></li>
-                                        <li> Web</strong> <a href="">http://localhost:3000</a></li>
-        
-                                    </ul>
-        
-                                </div> -->
+                            </div>
                         </section>
                         <br>
                         <a href="#" class="previous">&laquo; Previous</a>

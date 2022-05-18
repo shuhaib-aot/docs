@@ -129,77 +129,42 @@
 
 
                         <br>
-                        <section class="docs-section" id="installation-1">
-                            <h2 class="section-heading">Quick Installation</h2>
-                            <hr>
-
+                        <section>
                             <div>
-                                <h5>Formsflow.ai Single click installation</h5>
-
-                                <ul>
-                                    <li>Download batch file <a href="">Windows</a> <a href="">Linux</a></li>
-                                </ul>
-
-                                <p>This is a distribution of formsflow.ai latest release.
-                                     </p>
-                                <h5 id="table-of-contents">Table of Contents</h5>
+                                <h3 id="dashboard">Adding Dashboards on Admin page</h3>
+                                <p>
+                                    To enable dashboards, and provide authorization the following changes are required
+                                    in
+                                    existing installations:
                                 <ol>
-                                    <li><a href="#summary">Summary</a></li>
-                                    <li><a href="#dependency">Dependencies</a></li>
-                                    <li><a href="#installation">installation</a></li>
+                                    <li>Create a new main group called formsflow-analytics, and create as many subgroups
+                                        as you
+                                        want to associate various dashboards from Admin UI(in Designer)</li><br>
+                                    <img src="./assets/images/Screenshot 2022-05-16 123429.png" alt="image">
+                                    <li>Create a new mapper under forms-flow-web client in Keycloak, by following below
+                                        steps:
+                                    </li>
+                                    <img src="./assets/images/Screenshot 2022-05-16 130800.png" alt="image" height="500"
+                                        width="500"><br>
+                                    <li>Corresponding to each user, add the dashboard-groups you want to enable for
+                                        dashboard
+                                        authorization. This will give users permission to as many dashboards which the
+                                        group
+                                        have been enabled with from Admin.</li><br>
+                                    <img src="./assets/images/Screenshot 2022-05-16 131123.png" alt="image" width="1000"
+                                        height="500"><br>
+                                    <li>The dashboards added in the above step will be displayed in the insights tab
+                                    </li><br>
+                                    <img src="./assets/images/Screenshot 2022-05-16 131548.png" alt="image" width="1000"
+                                        height="500"><br><br>
+                                    <strong>Note:</strong>-For those users who have no groups added in keycloak will not
+                                    have
+                                    insights tab option.
+
                                 </ol>
-                                <h4 id="summary">Summary</h4>
-                                <p>The root directory contains the install script for windows. After executing it, you
-                                    can
-                                    access the web applications by following the link from <a
-                                        href="../../#verifying-the-installation-status">here</a></p>
-                                <h4 id="dependency">Dependencies</h4>
-                                <ol>
-                                    <div>
-                                        <ul>
-                                            <li><a href="https://docs.docker.com/engine/install/">Docker</a></li>
-                                            <li><a href="https://git-scm.com/">Git</a></li>
-                                        </ul>
-                                    </div>
-                                </ol>
-                                <h4 id="installation">Installation</h4>
-                                <code>This setup is not recommended for production use.</code>
-
-                                <ul>
-                                    <li>In the base directory execute install script by double clicking on the
-                                        install.bat
-                                        (For Windows).</li>
-                                    <li>The following image depicts the installation flow with user input required for
-                                        configuration.</li>
-                                </ul>
-                                <p><img src="https://user-images.githubusercontent.com/94040192/160104985-35e13a88-1384-48e7-8701-87ac9fc66cb1.jpg"
-                                        alt="Drawing (3)"></p>
-
-
-
-
-
-
-                                <!-- <h4>Step 2</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempora quos iusto
-                                    architecto excepturi. Maxime cum provident molestiae! Deserunt obcaecati est maxime.
-                                    Modi aut, sint hic quia perspiciatis dolor laboriosam?</p>
-                                <ul>
-                                    <li>Run batch file on command prompt as adminstartor </li>
-                                </ul>
-                            </div> -->
-                                <!-- <div>
-                                    <h5>testing List Examples:</h5>
-                                    <ul>
-                                        <li> Web</strong> <a href="">http://localhost:3000</a></li>
-                                        <li> Web</strong> <a href="">http://localhost:3000</a></li>
-                                        <li> Web</strong> <a href="">http://localhost:3000</a></li>
-        
-                                    </ul>
-        
-                                </div> -->
-                        </section>
-                        <br>
+                                </p>
+                            </div>
+                        </section <br>
                         <a href="#" class="previous">&laquo; Previous</a>
                         <a href="architecture.html" class="next">Next &raquo;</a>
 

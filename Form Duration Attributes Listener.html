@@ -129,75 +129,43 @@
 
 
                         <br>
-                        <section class="docs-section" id="installation-1">
-                            <h2 class="section-heading">Quick Installation</h2>
-                            <hr>
-
+                        <section class="docs-section" id="item-1-1">
                             <div>
-                                <h5>Formsflow.ai Single click installation</h5>
-
+                                <h2 id="form-duration-attributes-listener">Form Duration Attributes Listener</h2>
+                                <hr>
+                                <p><strong>org.camunda.bpm.extension.hooks.listeners.task.TaskDurationAttributesListener</strong>
+                                </p>
+                                <p>This component can be used on <strong>CREATE</strong> event of task listener. This
+                                    calculates and set
+                                    DUE DATE in business days only.</p>
+                                <h3 id="table-of-content">Table of Content</h3>
                                 <ul>
-                                    <li>Download batch file <a href="">Windows</a> <a href="">Linux</a></li>
+                                    <li><a href="#type">Type</a></li>
+                                    <li><a href="#how-it-works">How it Works</a></li>
+                                    <li><a href="#how-to-use">How to Use</a></li>
                                 </ul>
-
-                                <p>This is a distribution of formsflow.ai latest release.
-                                     </p>
-                                <h5 id="table-of-contents">Table of Contents</h5>
-                                <ol>
-                                    <li><a href="#summary">Summary</a></li>
-                                    <li><a href="#dependency">Dependencies</a></li>
-                                    <li><a href="#installation">installation</a></li>
-                                </ol>
-                                <h4 id="summary">Summary</h4>
-                                <p>The root directory contains the install script for windows. After executing it, you
-                                    can
-                                    access the web applications by following the link from <a
-                                        href="../../#verifying-the-installation-status">here</a></p>
-                                <h4 id="dependency">Dependencies</h4>
-                                <ol>
-                                    <div>
-                                        <ul>
-                                            <li><a href="https://docs.docker.com/engine/install/">Docker</a></li>
-                                            <li><a href="https://git-scm.com/">Git</a></li>
-                                        </ul>
-                                    </div>
-                                </ol>
-                                <h4 id="installation">Installation</h4>
-                                <code>This setup is not recommended for production use.</code>
-
+                                <h3 id="type">Type</h3>
+                                <p>Task Listener</p>
+                                <h3 id="how-it-works">How it Works</h3>
                                 <ul>
-                                    <li>In the base directory execute install script by double clicking on the
-                                        install.bat
-                                        (For Windows).</li>
-                                    <li>The following image depicts the installation flow with user input required for
-                                        configuration.</li>
+                                    <li>This takes in a mandatory expression field <strong>SLAInDays</strong>. It
+                                        calculate due date by
+                                        adding SLAInDays value with task creation date.
+                                        Please note; this also creates a CAM variable <strong>task_due_date</strong>
+                                        with the calculated
+                                        value.</li>
                                 </ul>
-                                <p><img src="https://user-images.githubusercontent.com/94040192/160104985-35e13a88-1384-48e7-8701-87ac9fc66cb1.jpg"
-                                        alt="Drawing (3)"></p>
+                                <h3 id="how-to-use">How to Use</h3>
+                                <p>Below snapshot shows how to configure the
+                                    <strong>TaskDurationAttributesListener</strong> to a task.
+                                </p><br><br>
+                                <p><img src="./assets/images/taskdurationattributes-listener-snp1.jpg"
+                                        alt="Task Duraion Attributes listener - Snapshot" height="500"
+                                        width="1000"><br><br>
+                                    Click here <a href="Timeout Notification Listener.html">Timeout Notification
+                                        Listener</a></p>
 
-
-
-
-
-
-                                <!-- <h4>Step 2</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempora quos iusto
-                                    architecto excepturi. Maxime cum provident molestiae! Deserunt obcaecati est maxime.
-                                    Modi aut, sint hic quia perspiciatis dolor laboriosam?</p>
-                                <ul>
-                                    <li>Run batch file on command prompt as adminstartor </li>
-                                </ul>
-                            </div> -->
-                                <!-- <div>
-                                    <h5>testing List Examples:</h5>
-                                    <ul>
-                                        <li> Web</strong> <a href="">http://localhost:3000</a></li>
-                                        <li> Web</strong> <a href="">http://localhost:3000</a></li>
-                                        <li> Web</strong> <a href="">http://localhost:3000</a></li>
-        
-                                    </ul>
-        
-                                </div> -->
+                            </div>
                         </section>
                         <br>
                         <a href="#" class="previous">&laquo; Previous</a>
