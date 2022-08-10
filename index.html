@@ -85,21 +85,80 @@
 					<li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span
 								class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Getting
 							started</a></li>
-					<li class="nav-item" id="introduction"><a class="nav-link scrollto" href="#introduction">Introduction</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="architecture.html">System Architecture</a>
+					<li class="nav-item active" id="introduction"><a class="nav-link scrollto"
+							href="#introduction">Introduction</a></li>
+					<li class="nav-item" id="aboutproject"><a class="nav-link scrollto" href="#aboutproject">About The
+							Project</a></li>
+					<li class="nav-item" id="architecture"><a class="nav-link scrollto" href="#architecture">System
+							Architecture</a>
 					</li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">About The Project</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-4">Features</a></li>
-					<!-- main heading -->
-					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span
-								class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Installation</a>
-					</li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#installation-1">Quick Installation</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#installation-2">Download and
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto active" href="#section-2"><span
+								class="theme-icon-holder me-2"><i class="fa fa-download"></i></span>Download and
 							Installation</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#installation-3">Anonymous</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#usage">usage-instructions</a>
+
+					<li class="nav-item" id="downloadformsflow"><a class="nav-link scrollto"
+							href="#downloadformsflow">Download Formsflow.ai</a></li>
+					<!-- main heading -->
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto active" href="#section-3"><span
+								class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Docker Based
+							Installation</a></li>
+					<li class="nav-item" id="quick_installation"><a class="nav-link scrollto"
+							href="#quick_installation">Quick Installation</a></li>
+					<li class="nav-item" id="docker_full_deployment"><a class="nav-link scrollto"
+							href="#docker_full_deployment">Docker Full Deployment</a></li>
+					<li class="nav-item" id="individual_service_deployment"><a class="nav-link scrollto"
+							href="#individual_service_deployment">Individual Service Deployment</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span
+								class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Openshift Based
+							Installation</a>
 					</li>
+					<li class="nav-item" id="openshift_installation"><a class="nav-link scrollto"
+							href="#openshift_installation">Openshift
+							Installation</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span
+								class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Usage
+							instructions</a>
+					</li>
+					<li class="nav-item" id="usage"><a class="nav-link scrollto" href="#usage">Usage</a>
+					</li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span
+								class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Features</a>
+					</li>
+					<li class="nav-item" id="internationalization"><a class="nav-link scrollto"
+							href="#internationalization">Internationalization</a></li>
+					<li class="nav-item" id="anonymousform"><a class="nav-link scrollto" href="#anonymousform">Anonymous
+							Forms</a></li>
+					<li class="nav-item" id="listeners"><a class="nav-link scrollto" href="#listeners">Bpm Listeners</a>
+					</li>
+
+					<li class="nav-item" id="camunda_filters"><a class="nav-link scrollto"
+							href="camunda_filters">Camunda Filters</a></li>
+					<li class="nav-item" id="taskvariables"><a class="nav-link scrollto"
+							href="#taskvariables">Taskvariable workflow</a></li>
+
+					<li class="nav-item" id="custom_components"><a class="nav-link scrollto"
+							href="#custom_components">Custom Components</a>
+					</li>
+					<li class="nav-item" id="Keycloak_SAML_setup"><a class="nav-link scrollto"
+							href="#Keycloak_SAML_setup">Keycloak SAML Setup</a></li>
+
+					<li class="nav-item" id="redash"><a class="nav-link scrollto" href="#redash">Analytics User
+							Guide</a></li>
+					<li class="nav-item" id="logochange"><a class="nav-link scrollto" href="#logochange">Theming</a>
+					</li>
+					<li class="nav-item" id="custom_submission"><a class="nav-link scrollto" href="#custom_submission"
+							style="color:  #566573">Custom Submission</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span
+								class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Multi Tenancy</a>
+					<li class="nav-item" id="tenantbased_taskassignment"><a class="nav-link scrollto"
+							href="#tenantbased_taskassignment">Tenant-based task assignment</a></li>
+
+
+
+
+
+
+
 					<!-- main heading -->
 					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span
 								class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
@@ -116,11 +175,15 @@
 
 		<!-- // this is main container -->
 		<div class="docs-content">
-			
+
 			<div class="container" id="main-content">
 				
 			</div>
-
+				<hr>
+				<div class="d-flex w-100 px-lg-5 px-2 justify-content-between align-items-center">
+					<button id="previous-btn" class="btn btn-outline-primary">Prev</button>
+					<button  id="next-btn" class="btn btn-primary">Next</button>
+				</div>
 
 			<!-- ----------------------- this is footer section ------------------------ -->
 			<footer class="footer">

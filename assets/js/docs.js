@@ -13,6 +13,9 @@ const sidebarLinks = document.querySelectorAll('#docs-sidebar .scrollto');
 window.onload=function() 
 { 
     responsiveSidebar(); 
+	let target = "introduction"
+    setPreviosNextfun (target)
+    
 };
 
 window.onresize=function() 
@@ -58,9 +61,7 @@ sidebarLinks.forEach((sidebarLink) => {
 		e.preventDefault();
 		
 		var target = sidebarLink.getAttribute("href").replace('#', '');
-		$("#main-content").load(`${target}.html`)
-        $(".active").removeClass("active")
-         $(`#${target}`).addClass("active")
+		setPreviosNextfun (target)
         
         //Collapse sidebar after clicking
 		if (sidebar.classList.contains('sidebar-visible') && window.innerWidth < 1200){
@@ -87,17 +88,58 @@ var spy = new Gumshoe('#docs-nav a', {
 
 var lightbox = new SimpleLightbox('.simplelightbox-gallery a', {/* options */});
 
-
-
-
-
-
-
-function changeData(name){
-	$(".active").removeClass("active")
-	$(`#${name}`).addClass("active")
-   $("#main").load(`${name}.html`)
+function setData(target){
+    $("#main-content").load(`${target}.html`)
+    $(".active").removeClass("active")
+     $(`#${target}`).addClass("active")
+	 window.scrollTo({top: 0, behavior: 'smooth'});
   }
 
 
+  function setPreviosAndNext(pre,next,isFirst,isLast){
+    const previosBtn = document.getElementById("previous-btn");
+    const nextBtn = document.getElementById("next-btn");
+    previosBtn.addEventListener("click",function(){
+        setPreviosNextfun(pre)
+    })
+    nextBtn.addEventListener("click",function(){
+		setPreviosNextfun(next)
+    });
+    if(isFirst){
+		console.log(previosBtn)
+        previosBtn.style.visibility="hidden"
+    }else{
+        previosBtn.style.visibility="visible"
 
+    }
+    if(isLast){
+        nextBtn.style.visibility="hidden"
+
+    }else{
+        nextBtn.style.visibility="visible"
+
+    }
+}
+
+
+function setPreviosNextfun (target){
+	let nextsbiling = document.getElementById(target).nextElementSibling
+    let prviossbiling = document.getElementById(target).previousElementSibling
+    let nextClasslist = Array.from(nextsbiling.classList)
+    let previousClasslist = Array.from(prviossbiling.classList)
+	console.log(previousClasslist,nextClasslist)
+    if(nextClasslist.includes("section-title")){
+        nextsbiling = nextsbiling.nextElementSibling.id
+    }
+    if(previousClasslist.includes("section-title")){
+        prviossbiling = prviossbiling.nextElementSibling.id
+    }
+        if(!prviossbiling ){
+            setPreviosAndNext(target,nextsbiling,true)
+        }else if (!nextsbiling){
+            setPreviosAndNext(prviossbiling,target,false,true)
+        }else{
+            setPreviosAndNext(prviossbiling,nextsbiling)
+        }
+		setData(target)
+}

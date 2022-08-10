@@ -10069,6 +10069,14 @@ code {
 .table thead th {
   border-color: #e7e9ed;
 }
+.table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
 .table-striped tbody tr:nth-of-type(odd) {
   background-color: #f5f5f5;
 }
