@@ -47,7 +47,9 @@ sidebarToggler.addEventListener("click", () => {
 sidebarLinks.forEach((sidebarLink) => {
   sidebarLink.addEventListener("click", (e) => {
     e.preventDefault();
-
+	if(!sidebarLink.parentElement.id){
+		return true
+	}
     var target = sidebarLink.getAttribute("href").replace("#", "");
     setPreviosNextfun(target);
 
